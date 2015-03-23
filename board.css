@@ -1,0 +1,1232 @@
+/* Форма редактирования объявления */
+
+.address_selector select {width:350px;}
+img.wait_img {vertical-align: middle;}
+
+.require {font-size: 10px; color: red;}
+
+div.errors
+{
+ color: red;
+ padding: 5px;
+}
+
+ #board_edit #floor_row,
+#board_edit #destination_row, #board_edit #distance_row, #board_edit #floors_row,
+#board_edit #max_price_row, #board_edit #price_rub_row, #board_edit #price_m_square_row, #board_edit #price_month_row,
+#board_edit #sharing_rooms_row, #board_edit #sanuzel_row
+{
+ clear:none;
+ float: left;
+ margin-right: 2em;
+}
+#board_edit #destination_row label, #board_edit #distance_row label,
+#board_edit #floors_row label, #board_edit #rooms_row label,
+#board_edit #floor_row label, #board_edit #floors_row label, #board_edit #max_price_row label,
+#board_edit #sanuzel_row label, #password_row label, #board_edit #formprotect_row label
+{
+ width: auto;
+ margin-right: 1em;
+}
+
+#board_edit #object_row, #board_edit #building_number_row
+{
+ clear: both;
+ float: left;
+ margin-right: 2em;
+}
+
+#board_edit #object_row select
+{
+ width: 20em;
+}
+
+#building_group, #area_group, #balcony_group
+{
+ clear: none;
+ float: left;
+ margin-right: 1em;
+}
+
+#land_group
+{
+ clear: none;
+ float: left;
+ width: 23em;
+}
+
+#board_edit #material_row, #board_edit #planning_row {float: left; clear: both;}
+#board_edit #planning_row label, 
+#board_edit #material_row label {width: 7em;}
+#board_edit #planning_row select, 
+#board_edit #material_row select {width: 13em;}
+
+#board_edit #area_row label,
+#board_edit #living_area_row label,
+#board_edit #kitchen_area_row label {width: 7em;}
+
+#board_edit #balcony_row label {width: 5em;}
+#board_edit #balcony_count_row label, #board_edit #balcony_area_row label
+{width: 14em;}
+#board_edit #balcony_row select {width: 12em;}
+
+#board_edit #rooms_row input, #board_edit #floor_row input,
+#board_edit #floors_row input, #board_edit #building_count_row input
+{width: 3em;}
+
+#board_edit #area_row input, #board_edit #living_area_row input ,
+#board_edit #kitchen_area_row input, #balcony_area_row input, 
+#board_edit #balcony_count_row input, #board_edit #land_area_row input,
+#distance_row input, #board_edit #formprotect_row input
+{width: 3em;}
+
+#building_number_row input {width:7em;}
+
+#board_edit #land_area_row label {width: 10em;}
+#board_edit #date_of_rent_row label {width: 7em;}
+
+#board_edit #land_rent_quartal, #board_edit #construction_date_quartal {white-space: nowrap;}
+#board_edit #land_rent_quartal label, #board_edit #land_rent_year label,
+#board_edit #construction_date_quartal label, #board_edit #construction_date_year label
+{display: inline; float: none; font-weight: normal; margin-left: 1em;}
+#board_edit #land_rent_year input {width: 3em; margin-left:7em;}
+
+#board_edit #construction_date_quartal {float: left;}
+#board_edit #construction_date_year input {width: 3em; margin-left:4em;}
+
+#board_edit #max_price_row {margin-right: 0;}
+#board_edit #max_price_row input {width:7em; text-align: right; float: left;}
+.form_container #price_unit {display: block; float: left; width: 10em; margin-left: 5px;}
+#board_edit #price_rub_row label, #board_edit #price_m_square_row label, #board_edit #price_month_row label {display: inline; float: none;}
+
+#board_edit #exists_photos ul
+{
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+#board_edit #exists_photos li
+{
+ float: left;
+ margin-right: 1em;
+ height: 130px;
+ text-align: center;
+}
+
+#board_edit #exists_photos img
+{
+ display: block;
+ border: 1px solid black;
+}
+
+#board_edit #contacts_row input {width: 30em;}
+
+.form_container .description
+{
+ font-size: 11px;
+ line-height: 1;
+ color: grey;
+}
+
+.form_container .description-alert
+{
+ font-size: 13px;
+ line-height: 1;
+ color: red;
+}
+
+/*
+#board_edit #price_descr
+{
+ float: right;
+ width: 530px;
+}
+*/
+
+#board_edit #rooms_row
+{
+ clear: none;
+ float: left;
+}
+
+#board_edit #rooms_descr
+{
+ float:right;
+}
+
+/* End - Форма редактирования объявления */
+
+
+
+/* Boards table */
+
+table.boards_table 
+{
+ background-color: #CACAB9;
+ border: 2px solid #CACAB9;
+ border-bottom: 0;
+ width: 100%;
+ font-size: 8pt;
+}
+
+.boards_table td 
+{
+ background-color: white;
+ padding: 5px 4px 5px 4px;
+ text-align: center;
+ vertical-align: middle;
+ border: 1px solid #CACAB9;
+}
+
+td.left
+{
+ text-align: left;
+}
+
+td.right
+{
+ text-align: right;
+}
+
+.boards_table th 
+{
+ background-color: #F0F0F0;
+ border: 1px solid #CACAB9;
+ border-bottom: 2px solid #CACAB9;
+ text-align: center;
+}
+
+.boards_table .last td 
+{
+ border-bottom: 2px solid #CACAB9;
+ background-color: #F8F8F8;
+}
+
+.boards_table .photo span 
+{
+ cursor: pointer;
+ text-decoration: underline;
+ color: #007F42;
+}
+
+.boards_table .photo span:hover
+{
+ text-decoration: none;
+ color: black;
+}
+
+
+.boards_table b
+{
+ color: green;
+ font-weight: normal;
+}
+
+.boards_table div.object
+{
+ float: left;
+ margin-right: 1em;
+}
+
+.boards_table div.number, .boards_table div.date, .boards_table div.addon
+{
+ float: left;
+ margin-right: 2em;
+}
+
+.boards_table div.trash
+{
+ float: right;
+}
+
+.boards_table div.edit, .boards_table div.planning
+{
+ float: right;
+}
+
+.boards_table div.address
+{
+ clear: both;
+}
+
+.boards_table div.addon
+{
+ position: relative;
+}
+
+.boards_table div.addon a
+{
+ position: absolute;
+ z-index: 0;
+ white-space: nowrap;
+}
+
+.boards_table div.addon div.add_container
+{
+ position: absolute;
+ z-index: 1000;
+ top: 0;
+ left: 0;
+ width: 500px;
+ border: 1px solid black;
+ background: white;
+ display: none;
+}
+
+.boards_table div.addon .add_container p
+{
+ display: block;
+ margin: 0;
+ padding: 5px;
+}
+
+.boards_table div.addon .add_container span
+{
+ display: block;
+ margin: 0;
+ padding: 5px;
+ background: #F8F8F8;
+ border-top: 1px solid #CACAB9;
+}
+
+.boards_table div.addon:hover div.add_container
+{
+ display: block;
+}
+
+.boards_table tr.addon td
+{
+ text-align: left;
+ vertical-align: top;
+}
+
+.boards_table tr.addon p
+{
+ margin: 0;
+}
+
+.boards_table tr.addon span
+{
+ display: block;
+ margin: 5px 0 0 0;
+ padding-top: 3px;
+ border-top: 1px solid #CACAB9;
+}
+
+
+/* Boards card */
+
+table.boards_card
+{
+/* background-color: #CACAB9; */
+/* border: 1px solid #CACAB9;*/
+ width: 100%;
+ 
+font-size: 8pt;
+ 
+border-collapse: collapse;
+}
+
+.boards_card td 
+{
+ background-color: white;
+ border: 2px solid #CACAB9;
+ text-align: center;
+ vertical-align: top;
+ padding: 0;
+}
+
+.boards_card table
+{
+ width: 100%;
+ font-size: 8pt;
+/* border: 1px solid #CACAB9; */
+ border-collapse: collapse;
+}
+
+.boards_card table td 
+{
+ padding: 4px 4px 4px 4px;
+ text-align: center;
+ vertical-align: middle;
+ border: 1px solid #CACAB9;
+ border-right: none;
+ border-left: none;
+}
+
+.boards_card table td.address
+{
+ width: 100%;
+}
+
+.boards_card table td.price
+{
+ font-weight: bold;
+ border-right: 1px solid #CACAB9;
+}
+
+.boards_card table td.photo
+{
+ width: 102px;
+ border-bottom: none;
+ border-right: 1px solid #CACAB9;
+ padding: 0;
+}
+
+.boards_card table td.photo img.wait_img
+{
+ position: absolute;
+ margin-left: -20px;
+ _margin-left: -23px;
+ background-color: white;
+}
+
+.boards_card table td.photo img
+{
+ cursor: pointer;
+}
+
+.boards_card table td.photo img.no_photo
+{
+ cursor: auto;
+ width: 100px;
+ height: 100px;
+}
+
+.boards_card table td.photo_nav
+{
+ border-top: none;
+ padding-top: 0;
+ padding-bottom: 0;
+ border-right: 1px solid #CACAB9;
+}
+
+.boards_card .photo_nav i
+{
+ font-style: normal; 
+}
+
+.boards_card .photo_nav b
+{
+ font-weight: normal; 
+ color: black;
+}
+
+.boards_card .photo_nav div.navigator
+{
+ width: 102px;
+ user-select: none;
+ -moz-user-select: none;
+ -khtml-user-select: none; 
+}
+
+.boards_card .photo_nav .navigator div.prev, .boards_card .photo_nav .navigator div.next
+{
+ float: left;
+ width: 8px;
+ height: 13px;
+ border: 1px solid #CACAB9;
+ background-color: #F8F8F8;
+ cursor: pointer;
+ padding: 0;
+}
+
+.boards_card .photo_nav .navigator div.counter
+{
+ float: left;
+ width: 82px;
+ height: 13px;
+ text-align: center;
+ padding: 0;
+}
+
+
+.boards_card .photo_nav .navigator div.prev
+{
+ background: url(img/arrows2.gif) top right no-repeat;
+}
+
+.boards_card .photo_nav .navigator div.next
+{
+ background: url(img/arrows2.gif) top left no-repeat;
+}
+
+.boards_card .photo_nav .navigator div.prev:hover,
+.boards_card .photo_nav .navigator div.next:hover
+{
+ background-color: #EF7807;
+}
+
+.boards_card table .last td 
+{
+ background-color: #F8F8F8;
+ border-bottom: none;
+}
+
+.boards_card table th 
+{
+ padding: 6px 4px 2px 4px;
+ text-align: center;
+ vertical-align: middle;
+ border: 1px solid #CACAB9;
+ border-right: none;
+ border-top: none;
+ border-left: none;
+ font-weight: normal;
+}
+
+.boards_card table th strong
+{
+ text-transform: uppercase;
+}
+
+.boards_card b
+{
+ color: green;
+ font-weight: normal;
+}
+
+.boards_card div.number, .boards_card div.addon
+{
+ float: left;
+ /* margin-right: 2em; */
+}
+
+.boards_card div.trash, .boards_card div.date
+{
+ float: right;
+}
+
+.boards_card div.edit
+{
+ float: right;
+}
+
+.boards_card div.addon
+{
+ position: relative;
+}
+
+.boards_card div.addon {min-height: 0; } /* IE7 */
+* html .boards_card div.addon {height: 1px; } /* IE6 */
+
+.boards_card div.addon a
+{
+ z-index: 0;
+ white-space: nowrap;
+}
+
+.boards_card div.addon div.add_container
+{
+ position: absolute;
+ z-index: 1000;
+ top: 0;
+ left: 0;
+ width: 310px;
+ border: 1px solid black;
+ background: white;
+ display: none;
+ text-align: left;
+}
+
+.boards_card div.addon .add_container p
+{
+ display: block;
+ margin: 0;
+ padding: 5px;
+}
+
+.boards_card div.addon .add_container span
+{
+ display: block;
+ margin: 0;
+ padding: 5px;
+ background: #F8F8F8;
+ border-top: 1px solid #CACAB9;
+}
+
+.boards_card div.addon:hover div.add_container
+{
+ display: block;
+}
+
+.boards_card img
+{
+ border: 1px solid black;
+}
+
+div.map
+{
+ margin-right:1em;
+ float: right;
+}
+
+div.edit
+{
+ margin-right:1em;
+ position:relative;
+}
+
+div.edit div
+{
+ position:absolute;
+ top: 0; left: 0;
+ background: white;
+ border: 1px solid black;
+ padding: 5px;
+ display: none;
+ z-index: 10;
+ text-align: left;
+}
+
+div.edit:hover div
+{
+ display: block;
+}
+
+.pages a {text-decoration: none}
+.pages a:hover {text-decoration: underline}
+.pages a.current {font-weight: bold; color: black;}
+
+
+/* Форма поиска */
+
+#search_form
+{
+ float: left;
+ border-right: 1px solid #bfbfbf;
+ width: 800px;
+}
+
+#search_form #object_type
+{
+ margin: 0;
+ padding: 0;
+ border-top: 1px solid #bfbfbf;
+ clear:both;
+}
+
+#search_form #object_type ul
+{
+ margin: 0;
+ padding: 0;
+ float: left;
+ list-style: none; 
+ background-color: #e1fee2;
+ border-bottom: 1px solid #bfbfbf;
+ font-size: 15px;
+}
+
+#search_form #object_type li
+{
+ float: left;
+ margin: 0;
+ padding: 5px;
+ border-left: 1px solid #bfbfbf;
+ border-bottom: 1px solid #bfbfbf;
+ background-color: white;
+}
+
+#search_form #object_type li.first
+{
+ border-left: none;
+}
+
+#search_form #object_type li.current
+{
+ background-color: #e1fee2;
+ font-weight: bold;
+ border-bottom: none;
+}
+
+#search_form #object_type .current a
+{
+ font-weight: bold;
+ color: black;
+ text-decoration: none;
+}
+
+#search_form #object_type #operation
+{
+ clear: both;
+ padding: 5px 0 5px 3em;
+ background-color: #e1fee2;
+ border: none;
+ white-space: nowrap;
+ font-size: 10pt;
+}
+
+#search_form #object_type #operation a
+{
+ margin-right: 5em;
+ color: black;
+ text-decoration: none;
+}
+
+#search_form #object_type #operation a:hover
+{
+ text-decoration: underline;
+}
+
+#search_form #object_type #operation a.current
+{
+ font-weight: bold;
+ font-size: 110%;
+}
+
+#search_form #object_row select, #search_form #oblast_row select, #search_form #town_row select, #search_form #microregion_row input, #search_form #street_row input
+{
+ width: 200px;
+}
+
+#search_form #base_address
+{
+  float:left;
+  width: 55%;
+}
+
+#search_form #admin_regions_block
+{
+ float: right;
+ width: 45%;
+}
+
+#search_form #admin_regions_block label
+{
+ float: left;
+ font-weight: bold;
+ width: 9em;
+}
+
+#search_form #admin_regions_row
+{
+ width: 200px;
+ height: 100px;
+ overflow: auto;
+ border: 1px solid #bfbfbf;
+ line-height: 1;
+}
+
+#search_form #admin_regions_row label
+{
+ float: none;
+ display: block;
+ width: auto;
+ font-weight: normal;
+}
+
+#search_form #rooms_row
+{
+ height: 4em;
+ _height: 5em;
+}
+
+#search_form #rooms_row label
+{
+ float: left;
+ margin-right: 1em;
+ font-weight: normal;
+ text-align: center;
+ line-height: 1;
+}
+
+#search_form #search_floor_row
+{
+ clear: none;
+ height: 4em;
+ _height: 5em;
+ overflow: auto;
+}
+
+#search_form #search_floor_row label
+{
+ width: auto;
+ margin-right: 1em;
+ font-weight: normal;
+}
+
+#search_form #search_land_area_row
+{
+ clear: none;
+ height: 4em;
+ _height: 5em;
+ overflow: auto;
+}
+
+#search_form #search_land_area_row input
+{
+ width: 5em;
+}
+
+#search_form #search_price_row
+{
+ clear: none;
+ height: 4em;
+ _height: 5em;
+}
+
+#search_form #search_price_row input
+{
+ width: 4em;
+}
+
+#search_form #search_area_block
+{
+ float: left;
+ margin-right: 2em;
+}
+
+#search_form #search_area_block fieldset.mini
+{
+ margin-right: 0;
+}
+
+#search_area_row, #search_living_area_row, #search_kitchen_area_row
+{
+ width: 140px;
+}
+
+#search_area_row input, #search_living_area_row input, #search_kitchen_area_row input
+{
+ width: 3em;
+}
+
+#search_area_row label, #search_living_area_row label, #search_kitchen_area_row label
+{
+ margin-right: 0.5em;
+}
+
+div.multiselect
+{
+ float: left;
+ margin-right: 1em;
+}
+
+.multiselect label
+{
+ font-weight: bold;
+}
+
+.multiselect div
+{
+ width: 192px;
+ height: 160px;
+ overflow: auto;
+ border: 1px solid #bfbfbf;
+ line-height: 1;
+}
+
+.multiselect div label
+{
+ float: none;
+ display: block;
+ width: auto;
+ font-weight: normal;
+}
+
+#sanuzel_block
+{
+ margin-right: 0;
+}
+
+#search_addon_row legend
+{
+ cursor: pointer;
+ text-decoration: underline;
+}
+
+#search_sort_row label
+{
+ margin-right: 1em;
+ float: left;
+}
+
+#search_form #submit_row {
+  text-align: center;
+  clear: none;
+  float: right;
+}
+
+#search_form #submit_row a {
+  background: url("/img/find_button104_33.png") no-repeat scroll left top transparent;
+  background-size: auto 100%;
+  color: #FFFFFF;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  height: 33px;
+  line-height: 0.7;
+  text-align: center;
+  text-decoration: none;
+  width: 104px;
+}
+
+#search_form #submit_row a:hover
+{
+ color: black;
+}
+
+#search_form #submit_row a span {
+  display: block;
+  padding: 7px 0 0;
+}
+
+#search_preview
+{
+ float: right;
+ width: 175px;
+}
+
+#search_preview h2
+{
+ background-color: #D1F6CA;
+ border-top: 1px solid #71B287;
+ border-bottom: 1px solid #71B287;
+ font-family: Georgia,serif;
+ font-size: 13px;
+ font-weight: normal;
+ padding: 2px 5px;
+ color: #007F42;
+ margin-bottom: 5px;
+}
+
+/* End - Форма поиска */
+
+
+/* Autocomplete */
+
+.autocomplete-w1 { z-index: 10; /*background:url(shadow.png) no-repeat bottom right;*/ position:absolute; top:3px; left:0px; /* IE6 fix: */ _background:none; _top:1px; }
+.autocomplete-w2 { padding:0 6px 6px 0; }
+.autocomplete { width:300px; border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px 0px; /* IE specific: */ _height:350px;  _margin:0px 6px 6px 0; overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:bold; }
+
+/* End - Autocomplete */
+
+#photos
+{
+ width: 100%;
+ //height: 640px;
+ min-height: 700px;
+ margin: 10px 0 0 0;
+ position: relative;
+}
+
+
+#photo_list
+{
+ display: block;
+ list-style: none;
+ list-style-image: none;
+ margin: 0 10px 0 0;
+ padding: 5px;
+ overflow: auto;
+ width: 140px;
+ border: 2px solid #CACAB9;
+ position: absolute;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ height: 480px;
+ text-align: center;
+}
+
+#photo_list li
+{
+
+}
+
+#photo_list img
+{
+ border: 1px solid black;
+ cursor: pointer;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+#photo_list img.selected
+{
+ border: 2px solid #EF7807;
+ margin-top: 4px;
+ margin-bottom: 4px;
+}
+
+#photo_list img:hover
+{
+ border-color: #EF7807;
+}
+
+#full_photo
+{
+ margin: 0 0 0 160px;
+ text-align: center;
+ z-index: 1;
+}
+
+#full_photo img
+{
+ border: 1px solid black;
+ z-index: 1;
+ max-width: 100%;
+ width: auto;
+ height: auto;
+}
+
+#dom_overlay 
+{
+ background-color: #E1FEE2;
+ position: absolute; 
+ top:0; left:0; bottom: 0;
+ _height: expression(result_container.offsetHeight);
+ opacity: 0.7; 
+ filter:alpha(opacity=70);
+ width: 100%;
+ z-index: 90;
+ font-size: 0;
+}
+
+#loading1, #loading2, #preview_loading
+{
+ font-weight: bold;
+ font-size: 16pt;
+ border: 1px solid black;
+ background: white url(img/wait.gif) 1px 8px no-repeat;
+ position: absolute;
+ padding: 5px 5px 5px 20px;
+ left: 5px;
+ z-index: 95;
+}
+
+#loading1
+{
+ top: 5px;
+}
+
+#loading2
+{
+ bottom: 5px;
+}
+
+#search_preview ul
+{
+ font-size: 8pt;
+}
+
+#preview_loading
+{
+ position: relative;
+ top:0; left: 0;
+}
+
+#boards_view_selector
+{
+}
+
+#boards_view_selector ul
+{
+ list-style: none;
+ list-style-image: none;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ font-size: 13pt;
+ margin-bottom: 5px;
+}
+
+#boards_view_selector li
+{
+ display: block;
+ float: left;
+ padding: 5px 0.5em 5px 0.5em;
+ margin: 0 0 5px 0;
+ cursor: pointer;
+ border: 1px solid #BFBFBF;
+ border-right: none;
+ border-bottom: 1px solid #BFBFBF;
+}
+
+#boards_view_selector li.current
+{
+ font-weight: bold;
+ border-bottom: none;
+ padding-top:6px;
+}
+
+#boards_view_selector li.last
+{
+ border-top: none;
+ padding-top:6px;
+ padding-left: 2em;
+ cursor: auto;
+}
+
+#boards_view_selector li:hover
+{
+ text-decoration: underline;
+}
+
+#boards_view_selector li.last:hover
+{
+ text-decoration: none;
+}
+
+#clear_trash {text-align: right;}
+
+td.kaka_sz
+{
+ padding: 0;
+}
+
+.boards_table td.kaka_sz
+{
+ border-bottom: 2px solid #CACAB9;
+}
+
+td.kaka_sz img
+{
+ border: none;
+}
+
+.kaka_zone img, .kaka_zone object, .kaka_zone embed
+{
+ vertical-align: middle;
+}
+
+#search_form.demand_form #rooms_row
+{
+ height: auto;
+}
+
+#search_form.demand_form #rooms_row label 
+{
+ font-weight: bold;
+ line-height: 2;
+ text-align: left;
+ margin-right: 0;
+}
+
+
+#demand_edit #max_price_row, #demand_edit #price_rub_row, #demand_edit #price_m_square_row, #demand_edit #price_month_row
+{
+ clear:none;
+ float: left;
+ margin-right: 2em;
+}
+#demand_edit #max_price_row label
+{
+ width: auto;
+ margin-right: 1em;
+}
+
+#demand_edit #min_price, #demand_edit #max_price
+{
+ width: 6em;
+ text-align: right;
+}
+
+#demand_edit #min_price
+{
+ margin-right: 1em;
+}
+
+#demand_edit #price_group input
+{
+ float: left;
+}
+
+#demand_edit #price_group label {width: auto;}
+
+#demand_edit #rooms_group
+{
+ float:left;
+ margin-right: 1em;
+}
+
+#demand_edit #rooms_group label, #demand_edit #building_group label
+{
+ width: 3em;
+}
+
+ul.boards_type
+{
+ list-style-type: none;
+ list-style-image: none;
+ margin: 0; padding: 0;
+ font-size: 14px;
+ background-color: #EDFCEA;
+}
+
+.boards_type li.first
+{
+ display: block;
+ float:left;
+ width: 50%; 
+ border-right: 1px solid #BFBFBF;
+ border-bottom: 1px solid #BFBFBF;
+ border-top: 1px solid #BFBFBF;
+ text-align: center;
+ padding: 5px;
+}
+
+.boards_type li.demand
+{
+ display: block;
+ border-bottom: 1px solid #BFBFBF;
+ border-top: 1px solid #BFBFBF;
+ text-align: center;
+ padding: 5px;
+}
+
+#yandex_map_container
+{
+ position: absolute;
+ margin-left: 140px;
+ background-color: white;
+ border: 1px solid #72B286;
+ padding: 10px;
+ z-index: 100;
+}
+
+#close_map
+{
+ text-align: right;
+ margin-bottom: 5px;
+}
+
+#yandex_map
+{
+ width: 700px;
+ height: 500px;
+ border: 1px solid #BFBFBF;
+}
+
+#precision
+{
+ float: left;
+}
+
+/* Photo reklama */
+
+div.photo_reklama
+{
+ width: 32%;
+ border: 2px solid #cacab9;
+ float: left;
+ margin: 0 0 7px 7px;
+}
+
+div.selected_board
+{
+ border-color: #EF7807;
+}
+
+div.selected_board_new
+{
+ border-color: #007F42;
+}
+div.selected_board_new th {
+  background-color: #007F42;
+  color: #FFFFFF;
+}
