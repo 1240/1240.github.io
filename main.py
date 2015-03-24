@@ -27,7 +27,7 @@ f.write('''
 <head> ''' +
     '<title>База от {0}</title>'.format(strftime("%Y-%m-%d_%H:%M:%S", localtime())) +
     '''<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="board.css">
     <script type="text/javascript">
@@ -54,8 +54,12 @@ for i in range(0, last_page):
             address = td_soup.findAll('td')[2].text + ' ' + td_soup.findAll('td')[4].text
             code_xml = urllib3.PoolManager().request('GET', geocode + urlencode({'geocode': address})).data
             cor = BeautifulSoup(code_xml).find('pos').string.split(' ')
+            color = ""
+            if 'индивидуальная' in str(td_soup):
+                color = ",{preset: 'islands#redIcon'}"
 
-            ww = "myGeoObjects.push(new ymaps.GeoObject({\n geometry: { type: \"Point\", coordinates: [ " + str(cor[1]) + ", " + str(cor[0]) + "]},\n properties: {\nclusterCaption: '" + str(td_soup.find('th').text) + "', \nballoonContentBody: '" + str(td_soup).replace('\n','').replace('\r', '').replace('src="','src="http://www.dom43.ru/estate_base/') + "'\n}\n}));"
+            ww = "myGeoObjects.push(new ymaps.GeoObject({\n geometry: { type: \"Point\", coordinates: [ " + str(cor[1]) + ", " + str(cor[0]) + "]},\n properties: {\nclusterCaption: '" + str(td_soup.find('th').text) + "', \nballoonContentBody: '" + str(td_soup).replace('\n','').replace('\r', '').replace('src="','src="http://www.dom43.ru/estate_base/') + "'\n}\n}" + \
+                  color + "));"
             f.write(ww + '\n')
         except:
             continue
