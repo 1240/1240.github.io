@@ -28,8 +28,11 @@ f.write('''
     '<title>База от {0}</title>'.format(strftime("%Y-%m-%d_%H:%M:%S", localtime())) +
     '''<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru_RU" type="text/javascript"></script>
+    <script src="board.js" type="text/javascript"></script>
+    <script src="jquery-1.11.2.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="board.css">
+
     <script type="text/javascript">
         ymaps.ready(init);
         var myMap,
@@ -52,14 +55,22 @@ for i in range(0, last_page):
         td_soup = BeautifulSoup(str(td))
         try:
             address = td_soup.findAll('td')[2].text + ' ' + td_soup.findAll('td')[4].text
-            code_xml = urllib3.PoolManager().request('GET', geocode + urlencode({'geocode': address})).data
+            code_xml = urllib3.PoolManager().request('GET', geocode + urlencode({'geocode': str(address).replace('Р.Люксембург', 'Розы Люксембург')})).data
             cor = BeautifulSoup(code_xml).find('pos').string.split(' ')
-            color = ""
+            col = ")"
             if 'индивидуальная' in str(td_soup):
-                color = ",{preset: 'islands#redIcon'}"
-
-            ww = "myGeoObjects.push(new ymaps.GeoObject({\n geometry: { type: \"Point\", coordinates: [ " + str(cor[1]) + ", " + str(cor[0]) + "]},\n properties: {\nclusterCaption: '" + str(td_soup.find('th').text) + "', \nballoonContentBody: '" + str(td_soup).replace('\n','').replace('\r', '').replace('src="','src="http://www.dom43.ru/estate_base/') + "'\n}\n}" + \
-                  color + "));"
+                col = ",{preset: 'islands#redIcon'})"
+            ww = "var gO = new ymaps.GeoObject({\n geometry: { type: \"Point\", coordinates: [ " + str(cor[1]) + ", " + str(cor[0]) + "]},\n properties: {\nclusterCaption: '" + str(td_soup.find('th').text) + "', \nballoonContentBody: '" + str(td_soup).replace('\n','').replace('\r', '').replace('src="','src="http://www.dom43.ru/estate_base/') + "'\n}\n}" + \
+                  col + '''; gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			}''' + ");myGeoObjects.push(gO);"
             f.write(ww + '\n')
         except:
             continue
