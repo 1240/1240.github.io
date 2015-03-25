@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <title>База от 2015-03-24_14:16:44</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="board.css">
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myGeoObjects;
+
+    	function getGeoObjects() {
+			myGeoObjects = [];
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.588983, 49.665337]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>К.Либкнехта ул, 151 </td></tr><tr><td>гостиного типа </td></tr><tr><td>      3 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      23 / 11 / 5                  </td></tr><tr><td class="price">Цена</td><td>      </td></tr><tr class="last"><td b_id="7169063" class="left" colspan="2"><div class="number"><b>№</b> 7169063</div><div class="date"><b>Дата:</b> 2015.03.24 14:10</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, ипотека возможна, .</p><span>АН "Крэдо", г. Киров, ул.Захватаева, д.23, оф 7<br/>Агент: 78-10-73, 8-905-871-69-48</span></div></div><div b_id="7169063" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=7169063">Редактировать</a><br/><a href="delete_board?b_id=7169063">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.604838, 49.651233]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="15685700" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=4920734"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Преображенская ул, 82/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      5 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>9</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      43 / 27 / -                  </td></tr><tr><td class="price">Цена</td><td>        2780       т.руб                  </td></tr><tr class="last"><td b_id="15685700" class="left" colspan="2"><div class="number"><b>№</b> 15685700</div><div class="date"><b>Дата:</b> 2015.03.24 14:10</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия застеклена 4 кв.м., пустая, чистая продажа, документы готовы, состояние хорошее, ламинат, натяжные потолки, водосчетчики, новые трубы, ключи</p><span>АН "Крэдо", г. Киров, ул.Захватаева, д.23, оф 7<br/>Агент: 78-10-73, 8-905-871-69-48</span></div></div><div b_id="15685700" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=15685700">Редактировать</a><br/><a href="delete_board?b_id=15685700">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.619959, 49.653740]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="15191149" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=4672047"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Октябрьский пр-кт, 79а </td></tr><tr><td>малосемейка </td></tr><tr><td>      3 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>12</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      13.5 / 8.5 / -                  </td></tr><tr><td class="price">Цена</td><td>        920       т.руб                  </td></tr><tr class="last"><td b_id="15191149" class="left" colspan="2"><div class="number"><b>№</b> 15191149</div><div class="date"><b>Дата:</b> 2015.03.24 14:10</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у раздельно, по документам жилое помещение, чистая продажа, ипотека возможна, документы готовы, состояние хорошее, собственники, соседи положительные, домофон, мебель</p><span>АН "Крэдо", г. Киров, ул.Захватаева, д.23, оф 7<br/>Агент: 44-78-84, 8-953-943-47-84 Людмила</span></div></div><div b_id="15191149" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=15191149">Редактировать</a><br/><a href="delete_board?b_id=15191149">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.619959, 49.653740]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="15883986" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5162026"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Октябрьский пр-кт, 79а </td></tr><tr><td>малосемейка </td></tr><tr><td>      5 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>12</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      24 / 16.5 / 5.2                  </td></tr><tr><td class="price">Цена</td><td>        1180       т.руб                  </td></tr><tr class="last"><td b_id="15883986" class="left" colspan="2"><div class="number"><b>№</b> 15883986</div><div class="date"><b>Дата:</b> 2015.03.24 14:10</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, ипотека возможна, чистая продажа, по документам жилое помещение, состояние отличное, новая сантехника, душевая кабина, водосчетчики, пластиковые окна</p><span>АН "Крэдо", г. Киров, ул.Захватаева, д.23, оф 7<br/>Агент: 78-10-73, 8-905-871-69-48</span></div></div><div b_id="15883986" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=15883986">Редактировать</a><br/><a href="delete_board?b_id=15883986">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.604838, 49.651233]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="9281760" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=2509805"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Преображенская ул, 82/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      16 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>14</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      45 / 19 / 11                  </td></tr><tr><td class="price">Цена</td><td>        2250       т.руб                  </td></tr><tr class="last"><td b_id="9281760" class="left" colspan="2"><div class="number"><b>№</b> 9281760</div><div class="date"><b>Дата:</b> 2015.03.24 14:10</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия застеклена 7 кв.м., чистая продажа, состояние хорошее, высокие потолки, новая сантехника, водосчетчики, коридор 10 кв.м.</p><span>АН "Крэдо", г. Киров, ул.Захватаева, д.23, оф 7<br/>Агент: 78-10-73, 8-905-871-69-48</span></div></div><div b_id="9281760" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=9281760">Редактировать</a><br/><a href="delete_board?b_id=9281760">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.597219, 49.662920]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="15401455" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=4780831"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Дерендяева ул, 64 </td></tr><tr><td>улучшенка </td></tr><tr><td>      2 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>23</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      33 / 17 / 6                  </td></tr><tr><td class="price">Цена</td><td>        1650       т.руб                  </td></tr><tr class="last"><td b_id="15401455" class="left" colspan="2"><div class="number"><b>№</b> 15401455</div><div class="date"><b>Дата:</b> 2015.03.24 14:10</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон застеклен 3 кв.м., чистая продажа, ипотека возможна, состояние отличное, ламинат, натяжные потолки, новая сантехника, пластиковые окна</p><span>АН "Крэдо", г. Киров, ул.Захватаева, д.23, оф 7<br/>Агент: 78-10-73, 8-905-871-69-48</span></div></div><div b_id="15401455" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=15401455">Редактировать</a><br/><a href="delete_board?b_id=15401455">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.602053, 49.626871]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="15336193" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=4751962"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 110/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      10 / 11 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>14</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      45.7 / 19.5 / 10.5                  </td></tr><tr><td class="price">Цена</td><td>        2380       т.руб                  </td></tr><tr class="last"><td b_id="15336193" class="left" colspan="2"><div class="number"><b>№</b> 15336193</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, 2 x лоджия застеклена 4.4 кв.м., изолированые, Квартира в новостройке,дом сдан в декабре 2014.центр города, полноценный кирпичный дом - Первый на Московской. Надежный застройщик "Атэкс". Общая площадь квартиры 45,7 кв.м, комната 19,5 кв.м, кухня 10,5 кв.м, просторная прихожая 7,4 кв.м, есть ниша для гардеробной или шкафа-купе, санузел совмещен, в квартире две застекленные лоджии 4,5 и 2,6 кв.м, остекление алюминием. Черновая отделка включает штукатурку стен, установку пластиковых окон, установку счетчиков учета воды, стяжку в санузле. Квартира очень просторная - ее можно перепланировать, сделав большую кухню-гостиную и спальню. Окна на север и восток, в направлении ул.Московской и в Центр города. Любая форма оплаты.</p><span>Ирина, 73-14-42, 8-922-993-14-42</span></div></div><div b_id="15336193" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit"><a href="#">Ред.</a><div><a href="edit_board?b_id=15336193">Редактировать</a><br/><a href="delete_board?b_id=15336193">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.591075, 49.637049]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Сурикова ул, 7 </td></tr><tr><td> </td></tr><tr><td>      5 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      38 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1650       т.руб                  </td></tr><tr class="last"><td b_id="16302852" class="left" colspan="2"><div class="number"><b>№</b> 16302852</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>в собственности более 3х лет, требует косметики.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16302852" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16302852">Редактировать</a><br/><a href="delete_board?b_id=16302852">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.591080, 49.640974]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Тургенева ул, 12 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      7 / 16 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      46 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        2530       т.руб                  </td></tr><tr class="last"><td b_id="16309252" class="left" colspan="2"><div class="number"><b>№</b> 16309252</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у раздельно, лоджия, черновая отделка, стяжка, штукатурка, шпатлевка, консьерж</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16309252" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16309252">Редактировать</a><br/><a href="delete_board?b_id=16309252">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.596370, 49.614860]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Воровского ул, 92/2 </td></tr><tr><td> </td></tr><tr><td>      10 / 14 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      46 / 20 / 12                  </td></tr><tr><td class="price">Цена</td><td>        2600       т.руб                  </td></tr><tr class="last"><td b_id="16309255" class="left" colspan="2"><div class="number"><b>№</b> 16309255</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон застеклен, продается большая,уютная,квартира индивидуальной планировки.дом 2009 г. кирпич. в квартире сделан ремонт,балкон застеклен-обшит пластиком. имеется гардеробная. в подъезде два лифта,видеонаблюдение. очень удачное расположение дома(остановки,магазины,школы,садики-все в шаговой доступности)рядом трц"глобус". в квартире остается вся мебель и бытовая техника( кухня,холодильник,стиральная машина,прихожая,диван-все новое)цифровое телевидение. дорогая входная дверь.межкомнатные двери-натуральное дерево.состояние отличное. в доме свое тсж( низкая квартплата примерно 1600 в месяц). доп.вложений не требует. в договоре вся сумма.документы готовы,квартира пустая,никто не прописан.сделка в любое время.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16309255" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16309255">Редактировать</a><br/><a href="delete_board?b_id=16309255">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.602292, 49.588198]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 189 </td></tr><tr><td>новая </td></tr><tr><td>      1 / 10 панель     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      36 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1850       т.руб                  </td></tr><tr class="last"><td b_id="16302856" class="left" colspan="2"><div class="number"><b>№</b> 16302856</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>в хорошем состоянии. рядом садик,школа 47,магазины.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16302856" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16302856">Редактировать</a><br/><a href="delete_board?b_id=16302856">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.588585, 49.641091]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Газетный 1-й пер, 17 </td></tr><tr><td>свободная </td></tr><tr><td>      6 / 12 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      39 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        2000       т.руб                  </td></tr><tr class="last"><td b_id="16302860" class="left" colspan="2"><div class="number"><b>№</b> 16302860</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>черновая отделка, сдача 1кв.2015г, полукруглая лоджия,подземный паркинг,детская площадка</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16302860" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16302860">Редактировать</a><br/><a href="delete_board?b_id=16302860">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.583439, 49.656228]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Октябрьский пр-кт, 153 </td></tr><tr><td>новая </td></tr><tr><td>      3 / 10 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      36 / 18 / 8                  </td></tr><tr><td class="price">Цена</td><td>        2100       т.руб                  </td></tr><tr class="last"><td b_id="16302862" class="left" colspan="2"><div class="number"><b>№</b> 16302862</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у раздельно, лоджия застеклена, с/у раздельно, лоджия застеклена 3 кв.м., здание построенно в 1996 г.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16302862" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16302862">Редактировать</a><br/><a href="delete_board?b_id=16302862">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.604838, 49.651233]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Преображенская ул, 82/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      16 / 10 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      49 / 21 / 11                  </td></tr><tr><td class="price">Цена</td><td>      </td></tr><tr class="last"><td b_id="16302868" class="left" colspan="2"><div class="number"><b>№</b> 16302868</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон, продаю квартиру в центре города! квартира в хорошем состоянии, ремонт от застройщика,с/у совмещенный кафель, очень теплая, окна во двор ! отличная детская площадка. в шаговой доступности тц джам молл. срочно!!!</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16302868" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16302868">Редактировать</a><br/><a href="delete_board?b_id=16302868">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.604838, 49.651233]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Преображенская ул, 82/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      11 / 16 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      48 / 22.5 / 23                  </td></tr><tr><td class="price">Цена</td><td>        2330       т.руб                  </td></tr><tr class="last"><td b_id="16302869" class="left" colspan="2"><div class="number"><b>№</b> 16302869</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, 2010 г.п. отделка от строителей. пустая. чистая продажа. подходит под ипотеку.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16302869" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16302869">Редактировать</a><br/><a href="delete_board?b_id=16302869">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.598405, 49.651179]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горького ул, 12 </td></tr><tr><td>малосемейка </td></tr><tr><td>      1 / 3 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      17 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1130       т.руб                  </td></tr><tr class="last"><td b_id="16286233" class="left" colspan="2"><div class="number"><b>№</b> 16286233</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, состояние отличное,после ремонта,новая сантехника,пустая,никто не прописан,через дорогу джем молл,ключи,показ в любое время!!!</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16286233" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16286233">Редактировать</a><br/><a href="delete_board?b_id=16286233">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.606849, 49.668256]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>К.Маркса ул, 48 </td></tr><tr><td>полногабарит </td></tr><tr><td>      5 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      41 / 19 / 9                  </td></tr><tr><td class="price">Цена</td><td>        1780       т.руб                  </td></tr><tr class="last"><td b_id="16286238" class="left" colspan="2"><div class="number"><b>№</b> 16286238</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>состояние хорошее,ж.б перекрытия,не угловая!!!</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16286238" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16286238">Редактировать</a><br/><a href="delete_board?b_id=16286238">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.591080, 49.640974]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Тургенева ул, 12 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      17 / 18 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      45 / 18 / 12                  </td></tr><tr><td class="price">Цена</td><td>        2800       т.руб                  </td></tr><tr class="last"><td b_id="16370975" class="left" colspan="2"><div class="number"><b>№</b> 16370975</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия, срок сдача - декабрь 2014, черновая, переуступка</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16370975" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16370975">Редактировать</a><br/><a href="delete_board?b_id=16370975">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.607697, 49.652554]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 16 </td></tr><tr><td>хрущевка </td></tr><tr><td>      5 / 5 панель     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      32.2 / 18 / 6                  </td></tr><tr><td class="price">Цена</td><td>        1650       т.руб                  </td></tr><tr class="last"><td b_id="16357408" class="left" colspan="2"><div class="number"><b>№</b> 16357408</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>балкон, требует ремонта, нет мебели</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16357408" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16357408">Редактировать</a><br/><a href="delete_board?b_id=16357408">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.603586, 49.621553]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16370984" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5241133"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 121/1 </td></tr><tr><td>квартира-студия </td></tr><tr><td>      3 / 17 панель     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>2</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      26 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1370       т.руб                  </td></tr><tr class="last"><td b_id="16370984" class="left" colspan="2"><div class="number"><b>№</b> 16370984</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>лоджия застеклена, дом сдан, черновая отделка, стяжка сделана</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16370984" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16370984">Редактировать</a><br/><a href="delete_board?b_id=16370984">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      3 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      48 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        2220       т.руб                  </td></tr><tr class="last"><td b_id="16357417" class="left" colspan="2"><div class="number"><b>№</b> 16357417</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, черновая отделка, сдача 2 кв.2015</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16357417" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16357417">Редактировать</a><br/><a href="delete_board?b_id=16357417">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.603586, 49.621553]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 121/1 </td></tr><tr><td>квартира-студия </td></tr><tr><td>      3 / 17 панель     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      27 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1620       т.руб                  </td></tr><tr class="last"><td b_id="16405550" class="left" colspan="2"><div class="number"><b>№</b> 16405550</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия застеклена, остается мебель и техника.заезжай и живи!!!</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16405550" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16405550">Редактировать</a><br/><a href="delete_board?b_id=16405550">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.594766, 49.650012]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горького ул, 25 </td></tr><tr><td>новая </td></tr><tr><td>      12 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      36 / 13 / 8                  </td></tr><tr><td class="price">Цена</td><td>        2400       т.руб                  </td></tr><tr class="last"><td b_id="16250414" class="left" colspan="2"><div class="number"><b>№</b> 16250414</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия застеклена, новый дом, застекленные лоджии, в собственности более 3 лет (собственник)</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16250414" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16250414">Редактировать</a><br/><a href="delete_board?b_id=16250414">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.591694, 49.642196]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16348463" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5233963"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Красноармейская ул, 67 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      5 / 10 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>2</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      45 / 18.3 / 10.5                  </td></tr><tr><td class="price">Цена</td><td>        2530       т.руб                  </td></tr><tr class="last"><td b_id="16348463" class="left" colspan="2"><div class="number"><b>№</b> 16348463</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>лоджия, не угловая, не у лифта,  черновая отделка, пластиковые окна, штукатурка стен, разводка воды, электричества, отопления, квартира полностью оплачена, ипотека подходит, сдача дома 2014 год</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16348463" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16348463">Редактировать</a><br/><a href="delete_board?b_id=16348463">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.604861, 49.647460]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Преображенская ул, 84б </td></tr><tr><td>квартира-студия </td></tr><tr><td>      11 / 11 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      40 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        2600       т.руб                  </td></tr><tr class="last"><td b_id="16452656" class="left" colspan="2"><div class="number"><b>№</b> 16452656</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>состояние отличное,евроремонт, остается кухня, шкаф, есть тех.этаж</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16452656" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16452656">Редактировать</a><br/><a href="delete_board?b_id=16452656">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.592407, 49.641990]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Воровского ул, 58а </td></tr><tr><td>хрущевка </td></tr><tr><td>      5 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      31 / 18 / 6                  </td></tr><tr><td class="price">Цена</td><td>        1700       т.руб                  </td></tr><tr class="last"><td b_id="16348464" class="left" colspan="2"><div class="number"><b>№</b> 16348464</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон, не угловая, косметический ремонт, пластиковые окна, новые трубы, линолеум, новая входная дверь, новые межкомнатнеые двери, с/у покраска, окна во двор, на юг, квартира пустая, чистая продажа</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16348464" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16348464">Редактировать</a><br/><a href="delete_board?b_id=16348464">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.604838, 49.651233]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16452657" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5270766"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Преображенская ул, 82/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      10 / 16 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      49 / 21 / 11                  </td></tr><tr><td class="price">Цена</td><td>        2380       т.руб                  </td></tr><tr class="last"><td b_id="16452657" class="left" colspan="2"><div class="number"><b>№</b> 16452657</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон, 2010 г.п. квартира в хорошем состоянии, ремонт от застройщика,с/у кафель, очень теплая, окна во двор. возможно риэлтор</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16452657" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16452657">Редактировать</a><br/><a href="delete_board?b_id=16452657">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.593148, 49.642008]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16192818" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5156850"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Воровского ул, 58 </td></tr><tr><td>хрущевка </td></tr><tr><td>      5 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      31 / 18 / 6                  </td></tr><tr><td class="price">Цена</td><td>        1650       т.руб                  </td></tr><tr class="last"><td b_id="16192818" class="left" colspan="2"><div class="number"><b>№</b> 16192818</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, перекрытия ж/б, косметический ремонт, окна во двор на юг</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16192818" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16192818">Редактировать</a><br/><a href="delete_board?b_id=16192818">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.603586, 49.621553]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16357426" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5235731"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 121/1 </td></tr><tr><td>квартира-студия </td></tr><tr><td>      4 / 17 панель     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>12</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      26 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1560       т.руб                  </td></tr><tr class="last"><td b_id="16357426" class="left" colspan="2"><div class="number"><b>№</b> 16357426</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия застеклена, хороший ремонт ( кафель, керамогранит, ламинат- натяжной потолок, плитка на лоджии, ни кто не жил) свидетельство! сделан выход под нагреватель и стиральную машину,ипотеку рассматриваем</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16357426" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16357426">Редактировать</a><br/><a href="delete_board?b_id=16357426">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.602053, 49.626871]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 110/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      8 / 10 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      38 / 15 / 9                  </td></tr><tr><td class="price">Цена</td><td>        1990       т.руб                  </td></tr><tr class="last"><td b_id="16447538" class="left" colspan="2"><div class="number"><b>№</b> 16447538</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия 7.2 кв.м., черновая отделка, дом сдан</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16447538" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16447538">Редактировать</a><br/><a href="delete_board?b_id=16447538">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      3 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      41 / 18.1 / 12.6                  </td></tr><tr><td class="price">Цена</td><td>        2150       т.руб                  </td></tr><tr class="last"><td b_id="16452659" class="left" colspan="2"><div class="number"><b>№</b> 16452659</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия застеклена 8 кв.м., черновая отделка</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16452659" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16452659">Редактировать</a><br/><a href="delete_board?b_id=16452659">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16291381" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5204215"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      13 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      44 / 21 / 10.6                  </td></tr><tr><td class="price">Цена</td><td>        2464       т.руб                  </td></tr><tr class="last"><td b_id="16291381" class="left" colspan="2"><div class="number"><b>№</b> 16291381</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия, на всех этажах планировки одинаковые. стоимость 56 т.р  за кв.м.на 13,16 этажах</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16291381" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16291381">Редактировать</a><br/><a href="delete_board?b_id=16291381">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.588983, 49.665337]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16298041" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5205411"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>К.Либкнехта ул, 151 </td></tr><tr><td> </td></tr><tr><td>      4 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      29 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1700       т.руб                  </td></tr><tr class="last"><td b_id="16298041" class="left" colspan="2"><div class="number"><b>№</b> 16298041</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, без балкона, состояние хорошее, тихие соседи, развитая инфраструктура</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16298041" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16298041">Редактировать</a><br/><a href="delete_board?b_id=16298041">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16421188" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5253796"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>квартира-студия </td></tr><tr><td>       кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      36.6 / 25.8 / -                  </td></tr><tr><td class="price">Цена</td><td>        2049       т.руб                  </td></tr><tr class="last"><td b_id="16421188" class="left" colspan="2"><div class="number"><b>№</b> 16421188</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>лоджия, на всех этажах планировки одинаковые. стоимость 56 т.р  за кв.м.на 12,16 этажах</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16421188" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16421188">Редактировать</a><br/><a href="delete_board?b_id=16421188">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.613074, 49.672937]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16348485" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5233988"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Советская ул, 36 </td></tr><tr><td>улучшенка </td></tr><tr><td>      4 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      31 / 17.1 / 6.4                  </td></tr><tr><td class="price">Цена</td><td>        1750       т.руб                  </td></tr><tr class="last"><td b_id="16348485" class="left" colspan="2"><div class="number"><b>№</b> 16348485</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон застеклен, 1977 г.п., втроенный шкаф купе в прихожей, городской телефон, интернет, сигнализация, домофон, ремонт обычный, заменены батареи в комнате и на кухне, новая газовая плита, водонагреватель, ремонт в подьезде, более 3 лет в собственности</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16348485" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16348485">Редактировать</a><br/><a href="delete_board?b_id=16348485">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.593148, 49.642008]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Воровского ул, 58 </td></tr><tr><td>хрущевка </td></tr><tr><td>      5 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      31 / 17 / 6                  </td></tr><tr><td class="price">Цена</td><td>        1630       т.руб                  </td></tr><tr class="last"><td b_id="16348489" class="left" colspan="2"><div class="number"><b>№</b> 16348489</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон, ремонт</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16348489" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16348489">Редактировать</a><br/><a href="delete_board?b_id=16348489">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16298058" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5205389"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      4 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      45.1 / 23.1 / 10.1                  </td></tr><tr><td class="price">Цена</td><td>        2525       т.руб                  </td></tr><tr class="last"><td b_id="16298058" class="left" colspan="2"><div class="number"><b>№</b> 16298058</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия, на всех этажах планировки одинаковые. стоимость 56 т.р  за кв.м.на 4,5,6,7,10,11,12,13,14,15</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16298058" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16298058">Редактировать</a><br/><a href="delete_board?b_id=16298058">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16348491" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5233989"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      16 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      43.8 / 21.4 / 11.4                  </td></tr><tr><td class="price">Цена</td><td>        2452       т.руб                  </td></tr><tr class="last"><td b_id="16348491" class="left" colspan="2"><div class="number"><b>№</b> 16348491</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия 8 кв.м., на всех этажах планировки одинаковые. стоимость 56 т.р  за кв.м. на 16 этаже</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16348491" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16348491">Редактировать</a><br/><a href="delete_board?b_id=16348491">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.606971, 49.663100]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Пятницкая ул, 87 </td></tr><tr><td>новая </td></tr><tr><td>      9 / 10 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      36 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        2300       т.руб                  </td></tr><tr class="last"><td b_id="16298063" class="left" colspan="2"><div class="number"><b>№</b> 16298063</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у раздельно, лоджия застеклена, продается светлая и теплая 1-комн. квартира.сделан хороший ремонт, квартира чистая. лоджия застеклена 6м. с/у раздельный. в туалете установлен водонагреватель.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16298063" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16298063">Редактировать</a><br/><a href="delete_board?b_id=16298063">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.591694, 49.642196]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Красноармейская ул, 67 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      10 / 16 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      46.8 / 20 / 13                  </td></tr><tr><td class="price">Цена</td><td>        2500       т.руб                  </td></tr><tr class="last"><td b_id="16381008" class="left" colspan="2"><div class="number"><b>№</b> 16381008</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>получистовая отделка, черновая, сдача 2 квартал 2015</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16381008" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16381008">Редактировать</a><br/><a href="delete_board?b_id=16381008">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.606113, 49.666567]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Пятницкая ул, 56/1 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      7 / 15 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      36 / 13.5 / 12.6                  </td></tr><tr><td class="price">Цена</td><td>        3260       т.руб                  </td></tr><tr class="last"><td b_id="16257620" class="left" colspan="2"><div class="number"><b>№</b> 16257620</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия, евро ремонт, мебель</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16257620" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16257620">Редактировать</a><br/><a href="delete_board?b_id=16257620">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.603642, 49.649688]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16357464" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5235851"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 83 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      7 / 16 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>15</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      43 / 18.4 / -                  </td></tr><tr><td class="price">Цена</td><td>        2630       т.руб                  </td></tr><tr class="last"><td b_id="16357464" class="left" colspan="2"><div class="number"><b>№</b> 16357464</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>лоджия застеклена, теплая не угловая, полный стеклопакет, частично мебель</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16357464" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16357464">Редактировать</a><br/><a href="delete_board?b_id=16357464">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16257625" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5190393"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      3 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      44.8 / 16.7 / 12.2                  </td></tr><tr><td class="price">Цена</td><td>        2508       т.руб                  </td></tr><tr class="last"><td b_id="16257625" class="left" colspan="2"><div class="number"><b>№</b> 16257625</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия, 3,4,15,16 этаж. на всех этажах планировки одинаковые. стоимость 56 т.р  за кв.м.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16257625" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16257625">Редактировать</a><br/><a href="delete_board?b_id=16257625">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.593551, 49.672748]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Володарского ул, 157 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      14 / 22 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      45 / 13 / 14                  </td></tr><tr><td class="price">Цена</td><td>        2400       т.руб                  </td></tr><tr class="last"><td b_id="16357466" class="left" colspan="2"><div class="number"><b>№</b> 16357466</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у раздельно, лоджия застеклена 3.4 кв.м., черновая отделка, дом сдан, свидетельство получено</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16357466" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16357466">Редактировать</a><br/><a href="delete_board?b_id=16357466">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.590493, 49.676224]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Свободы ул, 133а </td></tr><tr><td> </td></tr><tr><td>      5 / 8 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      46 / 20 / 13                  </td></tr><tr><td class="price">Цена</td><td>        3550       т.руб                  </td></tr><tr class="last"><td b_id="16249697" class="left" colspan="2"><div class="number"><b>№</b> 16249697</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, продается однокомнатная квартира с мебелью. в центре города у центрального рынка. площадь квартиры 47,4 кв.м. престижный дом, отличные соседи, очень удобная планировка, большая кухня 12,8 кв.м и комната 19,2, есть кладовая . санузел совмещен. дом 2001 года постройки. продается от собственника.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16249697" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16249697">Редактировать</a><br/><a href="delete_board?b_id=16249697">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.607697, 49.652554]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 16 </td></tr><tr><td>хрущевка </td></tr><tr><td>      5 / 5 панель     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      32 / - / 6                  </td></tr><tr><td class="price">Цена</td><td>        1600       т.руб                  </td></tr><tr class="last"><td b_id="16391522" class="left" colspan="2"><div class="number"><b>№</b> 16391522</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, балкон, требует ремонта, с/у отремонтирован,трубы поменяны весной 2014,счетчики на воду.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16391522" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16391522">Редактировать</a><br/><a href="delete_board?b_id=16391522">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.593551, 49.672748]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16391525" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5249600"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Володарского ул, 157 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      19 / 23 монолитный     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on"><div class="prev" onclick="MovePhoto(this, -1);" style="visibility:hidden;"></div><div class="counter"><i>1</i> из <b>6</b></div><div class="next" onclick="MovePhoto(this, 1);"></div></div></td><td>      43 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        3230       т.руб                  </td></tr><tr class="last"><td b_id="16391525" class="left" colspan="2"><div class="number"><b>№</b> 16391525</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у раздельно, лоджия, с евроремонтом в элитном доме, центр города, потрясающий вид из окна, ванна с гидромассажем, все в кафеле, триколор на 2 телевизора (жк тв уже висят на стенах по дизайнерскому проекту), оборудованная гардеробная со сферическими дверьми, встроенная кухня по индивидуальному проекту, лоджия дерево, сплит система в комнате, все новое.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16391525" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16391525">Редактировать</a><br/><a href="delete_board?b_id=16391525">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img b_id="16391527" onclick="OpenFullPhoto(this);" onload="ThumbLoaded(this);" p_id="0" src="http://www.dom43.ru/estate_base/photos/thumbnail?p_id=5249606"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>индивидуальная </td></tr><tr><td>      3 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      45.7 / 23.5 / 11.4                  </td></tr><tr><td class="price">Цена</td><td>        2559       т.руб                  </td></tr><tr class="last"><td b_id="16391527" class="left" colspan="2"><div class="number"><b>№</b> 16391527</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, лоджия, на всех этажах планировки одинаковые. стоимость 56 т.р  за кв.м.на 3,10,13 этаж</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-677-16-33 Антон</span></div></div><div b_id="16391527" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16391527">Редактировать</a><br/><a href="delete_board?b_id=16391527">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+},{preset: 'islands#redIcon'}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.605785, 49.651602]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горбуновой ул, 31 </td></tr><tr><td>новая </td></tr><tr><td>      10 / 17 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      37 / 17 / 9                  </td></tr><tr><td class="price">Цена</td><td>      </td></tr><tr class="last"><td b_id="16391528" class="left" colspan="2"><div class="number"><b>№</b> 16391528</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>черновая отделка, сдача дома 1кв.2015</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16391528" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16391528">Редактировать</a><br/><a href="delete_board?b_id=16391528">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.601715, 49.620511]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Московская ул, 118/1 </td></tr><tr><td>новая </td></tr><tr><td>      8 / 8 панель     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      33 / 17 / 8                  </td></tr><tr><td class="price">Цена</td><td>        1800       т.руб                  </td></tr><tr class="last"><td b_id="16339817" class="left" colspan="2"><div class="number"><b>№</b> 16339817</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>состояние обычное</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 26-42-10, 8-900-526-42-10 Вера</span></div></div><div b_id="16339817" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16339817">Редактировать</a><br/><a href="delete_board?b_id=16339817">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.592445, 49.681462]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Ленина ул, 109а </td></tr><tr><td>малосемейка </td></tr><tr><td>      10 / 10 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      23.9 / 16 / -                  </td></tr><tr><td class="price">Цена</td><td>        1350       т.руб                  </td></tr><tr class="last"><td b_id="16406380" class="left" colspan="2"><div class="number"><b>№</b> 16406380</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, студия, свежий ремонт, новая сантехника, ванная-плитка, натяжные потолки, высота потолков 2,7 м, интернет, цифровое тв, окна во двор, инфраструктура, остановка у дома.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16406380" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16406380">Редактировать</a><br/><a href="delete_board?b_id=16406380">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.608757, 49.657755]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Октябрьский пр-кт, 54 </td></tr><tr><td> </td></tr><tr><td>      5 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      40 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        3000       т.руб                  </td></tr><tr class="last"><td b_id="16248435" class="left" colspan="2"><div class="number"><b>№</b> 16248435</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>балкон, потолки 3 м, сделан ремонт в 2013г, дизайн проект (лофт), отделка произведена дорогостоящими импортными материалами. стены гостиной и спальни отделаны итальянской штукатуркой, ванная - итальянский кафель. квартира светлая, просторная, теплая. светодиодное освещение. остается все мебель и техника. заезжай, живи!</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16248435" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16248435">Редактировать</a><br/><a href="delete_board?b_id=16248435">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.592759, 49.650209]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Горького ул, 33 </td></tr><tr><td> </td></tr><tr><td>      4 / 5 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      32 / - / -                  </td></tr><tr><td class="price">Цена</td><td>        1700       т.руб                  </td></tr><tr class="last"><td b_id="16347508" class="left" colspan="2"><div class="number"><b>№</b> 16347508</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, сделана перепланировка, большая кухня и санузел. капитальная черновая отделка. стяжка пола, выровнены стены, пластик окна.</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 8-953-693-77-63 Евгений</span></div></div><div b_id="16347508" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16347508">Редактировать</a><br/><a href="delete_board?b_id=16347508">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+var gO = new ymaps.GeoObject({
+ geometry: { type: "Point", coordinates: [ 58.596018, 49.649607]},
+ properties: {
+clusterCaption: '1-комнатная квартира ', 
+balloonContentBody: '<html><body><td><table><tr><th colspan="2"><strong>1-комнатная квартира</strong> </th></tr><tr><td class="photo" rowspan="5"><img alt="нет фото" class="no_photo" height="100px" src="http://www.dom43.ru/estate_base/img/no_photo.png" width="100px"/></td><td class="address">Киров г </td></tr><tr><td>Центр  </td></tr><tr><td>Маклина ул, 53 </td></tr><tr><td> </td></tr><tr><td>      5 / 14 кирпич     </td></tr><tr><td class="photo_nav"><div class="navigator" unselectable="on">                        </div></td><td>      49.3 / 20.4 / 14.7                  </td></tr><tr><td class="price">Цена</td><td>        3950       т.руб                  </td></tr><tr class="last"><td b_id="16347513" class="left" colspan="2"><div class="number"><b>№</b> 16347513</div><div class="date"><b>Дата:</b> 2015.03.24 14:08</div><div class="reset_float"></div><div class="addon"><a href="#" onclick="return false;">Дополнительно / Контакты</a><div class="add_container"><p>с/у совмещен, 20 x лоджия, мебель, ремонт. 2007 гп</p><span>АН "Выбор жилья", г.Киров, ул.Спасская, д.18/2, оф.1, 75-51-81<br/>Агент: 77-71-55, 8-922-977-71-55 Филип</span></div></div><div b_id="16347513" class="trash"><a href="#" onclick="return SendToTrash(this);">В корзину</a></div><div class="edit" style="display: none"><a href="#">Ред.</a><div><a href="edit_board?b_id=16347513">Редактировать</a><br/><a href="delete_board?b_id=16347513">Удалить</a><br/></div></div><div class="map"><a href="#" onclick="return ShowOnMap(this);" title="Показать на карте (не работает в IE)">Карта</a></div></td></tr></table></td></body></html>'
+}
+}); gO.events.add('parentchange', function (e) {
+            var target = e.get('target');
+            if (target.getParent() != null) {
+                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
+                    target.getParent().options.set('preset', 'islands#redClusterIcons');
+                } else {
+                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
+                }
+            }
+			});myGeoObjects.push(gO);
+
+return myGeoObjects;
+
+    	}
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [58.600309, 49.650066],
+                zoom: 12
+            });
+
+	        myGeoObjects = getGeoObjects();
+            var clusterer = new ymaps.Clusterer({ clusterDisableClickZoom: true });
+			clusterer.add(myGeoObjects);
+			myMap.geoObjects.add(clusterer);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="map" style="width: 1800px; height: 900px"></div>
+</body>
+
+</html>
