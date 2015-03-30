@@ -43,8 +43,9 @@ f.write('''
 '''
 )
 last_page = 80
+ob = 0
 for i in range(0, last_page):
-    print("Индексация {0} из {1}".format(i+1, last_page), end="\r")
+    print("Индексация {0} из {1}".format(i+1, last_page))
     new_url = url + '&start=' + str(i*54)
     page = urllib3.PoolManager().request('GET', new_url).data
     soup = BeautifulSoup(page.decode("cp1251"))
@@ -71,7 +72,10 @@ for i in range(0, last_page):
                 }
             }
 			}''' + ");myGeoObjects.push(gO);"
+
             f.write(ww + '\n')
+            ob +=1
+            print("Добавлено {0} объявление".format(ob), end="\r")
         except:
             continue
 
