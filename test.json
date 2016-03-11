@@ -1,6 +1,5 @@
 {
-    "countries": {
-        "areas": [
+        "area": [
             {
                 "countryCode": "AD",
                 "countryName": "Andorra",
@@ -1252,5 +1251,5 @@
                 "population": "11651858"
             }
         ]
-    }
+    
 }
