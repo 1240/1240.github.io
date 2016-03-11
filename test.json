@@ -1,4 +1,6 @@
-{"area":[
+{
+    "countries": {
+        "area": [
             {
                 "countryCode": "AD",
                 "countryName": "Andorra",
@@ -1249,5 +1251,6 @@
                 "countryName": "Zimbabwe",
                 "population": "11651858"
             }
-]
+        ]
+    }
 }
