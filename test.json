@@ -1,6 +1,5 @@
 {
-    "countries": {
-        "country": [
+    "countries": [
             {
                 "countryName": "Andorra",
                 "population": "84000"
@@ -1002,5 +1001,4 @@
                 "population": "11651858"
             }
         ]
-    }
 }
