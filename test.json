@@ -1,1256 +1,2011 @@
 {
+<<<<<<< HEAD
     "countries": {
         "country": [
             {
                 "countryCode": "AD",
+=======
+    "countries": [
+            {
+>>>>>>> origin/master
                 "countryName": "Andorra",
                 "population": "84000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AE",
+=======
+>>>>>>> origin/master
                 "countryName": "United Arab Emirates",
                 "population": "4975593"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AF",
+=======
+>>>>>>> origin/master
                 "countryName": "Afghanistan",
                 "population": "29121286"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AG",
+=======
+>>>>>>> origin/master
                 "countryName": "Antigua and Barbuda",
                 "population": "86754"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AI",
+=======
+>>>>>>> origin/master
                 "countryName": "Anguilla",
                 "population": "13254"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AL",
+=======
+>>>>>>> origin/master
                 "countryName": "Albania",
                 "population": "2986952"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AM",
+=======
+>>>>>>> origin/master
                 "countryName": "Armenia",
                 "population": "2968000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AO",
+=======
+>>>>>>> origin/master
                 "countryName": "Angola",
                 "population": "13068161"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AQ",
+=======
+>>>>>>> origin/master
                 "countryName": "Antarctica",
                 "population": "0"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AR",
+=======
+>>>>>>> origin/master
                 "countryName": "Argentina",
                 "population": "41343201"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AS",
+=======
+>>>>>>> origin/master
                 "countryName": "American Samoa",
                 "population": "57881"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AT",
+=======
+>>>>>>> origin/master
                 "countryName": "Austria",
                 "population": "8205000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AU",
+=======
+>>>>>>> origin/master
                 "countryName": "Australia",
                 "population": "21515754"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AW",
+=======
+>>>>>>> origin/master
                 "countryName": "Aruba",
                 "population": "71566"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AX",
+=======
+>>>>>>> origin/master
                 "countryName": "Åland",
                 "population": "26711"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "AZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Azerbaijan",
                 "population": "8303512"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BA",
+=======
+>>>>>>> origin/master
                 "countryName": "Bosnia and Herzegovina",
                 "population": "4590000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BB",
+=======
+>>>>>>> origin/master
                 "countryName": "Barbados",
                 "population": "285653"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BD",
+=======
+>>>>>>> origin/master
                 "countryName": "Bangladesh",
                 "population": "156118464"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BE",
+=======
+>>>>>>> origin/master
                 "countryName": "Belgium",
                 "population": "10403000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BF",
+=======
+>>>>>>> origin/master
                 "countryName": "Burkina Faso",
                 "population": "16241811"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BG",
+=======
+>>>>>>> origin/master
                 "countryName": "Bulgaria",
                 "population": "7148785"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BH",
+=======
+>>>>>>> origin/master
                 "countryName": "Bahrain",
                 "population": "738004"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BI",
+=======
+>>>>>>> origin/master
                 "countryName": "Burundi",
                 "population": "9863117"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BJ",
+=======
+>>>>>>> origin/master
                 "countryName": "Benin",
                 "population": "9056010"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BL",
+=======
+>>>>>>> origin/master
                 "countryName": "Saint Barthélemy",
                 "population": "8450"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BM",
+=======
+>>>>>>> origin/master
                 "countryName": "Bermuda",
                 "population": "65365"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BN",
+=======
+>>>>>>> origin/master
                 "countryName": "Brunei",
                 "population": "395027"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BO",
+=======
+>>>>>>> origin/master
                 "countryName": "Bolivia",
                 "population": "9947418"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BQ",
+=======
+>>>>>>> origin/master
                 "countryName": "Bonaire",
                 "population": "18012"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BR",
+=======
+>>>>>>> origin/master
                 "countryName": "Brazil",
                 "population": "201103330"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BS",
+=======
+>>>>>>> origin/master
                 "countryName": "Bahamas",
                 "population": "301790"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BT",
+=======
+>>>>>>> origin/master
                 "countryName": "Bhutan",
                 "population": "699847"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BV",
+=======
+>>>>>>> origin/master
                 "countryName": "Bouvet Island",
                 "population": "0"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BW",
+=======
+>>>>>>> origin/master
                 "countryName": "Botswana",
                 "population": "2029307"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BY",
+=======
+>>>>>>> origin/master
                 "countryName": "Belarus",
                 "population": "9685000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "BZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Belize",
                 "population": "314522"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CA",
+=======
+>>>>>>> origin/master
                 "countryName": "Canada",
                 "population": "33679000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CC",
+=======
+>>>>>>> origin/master
                 "countryName": "Cocos [Keeling] Islands",
                 "population": "628"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CD",
+=======
+>>>>>>> origin/master
                 "countryName": "Democratic Republic of the Congo",
                 "population": "70916439"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CF",
+=======
+>>>>>>> origin/master
                 "countryName": "Central African Republic",
                 "population": "4844927"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CG",
+=======
+>>>>>>> origin/master
                 "countryName": "Republic of the Congo",
                 "population": "3039126"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CH",
+=======
+>>>>>>> origin/master
                 "countryName": "Switzerland",
                 "population": "7581000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CI",
+=======
+>>>>>>> origin/master
                 "countryName": "Ivory Coast",
                 "population": "21058798"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CK",
+=======
+>>>>>>> origin/master
                 "countryName": "Cook Islands",
                 "population": "21388"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CL",
+=======
+>>>>>>> origin/master
                 "countryName": "Chile",
                 "population": "16746491"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CM",
+=======
+>>>>>>> origin/master
                 "countryName": "Cameroon",
                 "population": "19294149"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CN",
+=======
+>>>>>>> origin/master
                 "countryName": "China",
                 "population": "1330044000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CO",
+=======
+>>>>>>> origin/master
                 "countryName": "Colombia",
                 "population": "47790000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CR",
+=======
+>>>>>>> origin/master
                 "countryName": "Costa Rica",
                 "population": "4516220"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CU",
+=======
+>>>>>>> origin/master
                 "countryName": "Cuba",
                 "population": "11423000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CV",
+=======
+>>>>>>> origin/master
                 "countryName": "Cape Verde",
                 "population": "508659"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CW",
+=======
+>>>>>>> origin/master
                 "countryName": "Curacao",
                 "population": "141766"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CX",
+=======
+>>>>>>> origin/master
                 "countryName": "Christmas Island",
                 "population": "1500"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CY",
+=======
+>>>>>>> origin/master
                 "countryName": "Cyprus",
                 "population": "1102677"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "CZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Czech Republic",
                 "population": "10476000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "DE",
+=======
+>>>>>>> origin/master
                 "countryName": "Germany",
                 "population": "81802257"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "DJ",
+=======
+>>>>>>> origin/master
                 "countryName": "Djibouti",
                 "population": "740528"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "DK",
+=======
+>>>>>>> origin/master
                 "countryName": "Denmark",
                 "population": "5484000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "DM",
+=======
+>>>>>>> origin/master
                 "countryName": "Dominica",
                 "population": "72813"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "DO",
+=======
+>>>>>>> origin/master
                 "countryName": "Dominican Republic",
                 "population": "9823821"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "DZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Algeria",
                 "population": "34586184"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "EC",
+=======
+>>>>>>> origin/master
                 "countryName": "Ecuador",
                 "population": "14790608"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "EE",
+=======
+>>>>>>> origin/master
                 "countryName": "Estonia",
                 "population": "1291170"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "EG",
+=======
+>>>>>>> origin/master
                 "countryName": "Egypt",
                 "population": "80471869"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "EH",
+=======
+>>>>>>> origin/master
                 "countryName": "Western Sahara",
                 "population": "273008"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ER",
+=======
+>>>>>>> origin/master
                 "countryName": "Eritrea",
                 "population": "5792984"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ES",
+=======
+>>>>>>> origin/master
                 "countryName": "Spain",
                 "population": "46505963"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ET",
+=======
+>>>>>>> origin/master
                 "countryName": "Ethiopia",
                 "population": "88013491"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "FI",
+=======
+>>>>>>> origin/master
                 "countryName": "Finland",
                 "population": "5244000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "FJ",
+=======
+>>>>>>> origin/master
                 "countryName": "Fiji",
                 "population": "875983"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "FK",
+=======
+>>>>>>> origin/master
                 "countryName": "Falkland Islands",
                 "population": "2638"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "FM",
+=======
+>>>>>>> origin/master
                 "countryName": "Micronesia",
                 "population": "107708"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "FO",
+=======
+>>>>>>> origin/master
                 "countryName": "Faroe Islands",
                 "population": "48228"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "FR",
+=======
+>>>>>>> origin/master
                 "countryName": "France",
                 "population": "64768389"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GA",
+=======
+>>>>>>> origin/master
                 "countryName": "Gabon",
                 "population": "1545255"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GB",
+=======
+>>>>>>> origin/master
                 "countryName": "United Kingdom",
                 "population": "62348447"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GD",
+=======
+>>>>>>> origin/master
                 "countryName": "Grenada",
                 "population": "107818"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GE",
+=======
+>>>>>>> origin/master
                 "countryName": "Georgia",
                 "population": "4630000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GF",
+=======
+>>>>>>> origin/master
                 "countryName": "French Guiana",
                 "population": "195506"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GG",
+=======
+>>>>>>> origin/master
                 "countryName": "Guernsey",
                 "population": "65228"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GH",
+=======
+>>>>>>> origin/master
                 "countryName": "Ghana",
                 "population": "24339838"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GI",
+=======
+>>>>>>> origin/master
                 "countryName": "Gibraltar",
                 "population": "27884"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GL",
+=======
+>>>>>>> origin/master
                 "countryName": "Greenland",
                 "population": "56375"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GM",
+=======
+>>>>>>> origin/master
                 "countryName": "Gambia",
                 "population": "1593256"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GN",
+=======
+>>>>>>> origin/master
                 "countryName": "Guinea",
                 "population": "10324025"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GP",
+=======
+>>>>>>> origin/master
                 "countryName": "Guadeloupe",
                 "population": "443000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GQ",
+=======
+>>>>>>> origin/master
                 "countryName": "Equatorial Guinea",
                 "population": "1014999"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GR",
+=======
+>>>>>>> origin/master
                 "countryName": "Greece",
                 "population": "11000000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GS",
+=======
+>>>>>>> origin/master
                 "countryName": "South Georgia and the South Sandwich Islands",
                 "population": "30"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GT",
+=======
+>>>>>>> origin/master
                 "countryName": "Guatemala",
                 "population": "13550440"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GU",
+=======
+>>>>>>> origin/master
                 "countryName": "Guam",
                 "population": "159358"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GW",
+=======
+>>>>>>> origin/master
                 "countryName": "Guinea-Bissau",
                 "population": "1565126"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "GY",
+=======
+>>>>>>> origin/master
                 "countryName": "Guyana",
                 "population": "748486"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "HK",
+=======
+>>>>>>> origin/master
                 "countryName": "Hong Kong",
                 "population": "6898686"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "HM",
+=======
+>>>>>>> origin/master
                 "countryName": "Heard Island and McDonald Islands",
                 "population": "0"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "HN",
+=======
+>>>>>>> origin/master
                 "countryName": "Honduras",
                 "population": "7989415"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "HR",
+=======
+>>>>>>> origin/master
                 "countryName": "Croatia",
                 "population": "4491000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "HT",
+=======
+>>>>>>> origin/master
                 "countryName": "Haiti",
                 "population": "9648924"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "HU",
+=======
+>>>>>>> origin/master
                 "countryName": "Hungary",
                 "population": "9982000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ID",
+=======
+>>>>>>> origin/master
                 "countryName": "Indonesia",
                 "population": "242968342"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IE",
+=======
+>>>>>>> origin/master
                 "countryName": "Ireland",
                 "population": "4622917"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IL",
+=======
+>>>>>>> origin/master
                 "countryName": "Israel",
                 "population": "7353985"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IM",
+=======
+>>>>>>> origin/master
                 "countryName": "Isle of Man",
                 "population": "75049"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IN",
+=======
+>>>>>>> origin/master
                 "countryName": "India",
                 "population": "1173108018"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IO",
+=======
+>>>>>>> origin/master
                 "countryName": "British Indian Ocean Territory",
                 "population": "4000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IQ",
+=======
+>>>>>>> origin/master
                 "countryName": "Iraq",
                 "population": "29671605"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IR",
+=======
+>>>>>>> origin/master
                 "countryName": "Iran",
                 "population": "76923300"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IS",
+=======
+>>>>>>> origin/master
                 "countryName": "Iceland",
                 "population": "308910"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "IT",
+=======
+>>>>>>> origin/master
                 "countryName": "Italy",
                 "population": "60340328"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "JE",
+=======
+>>>>>>> origin/master
                 "countryName": "Jersey",
                 "population": "90812"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "JM",
+=======
+>>>>>>> origin/master
                 "countryName": "Jamaica",
                 "population": "2847232"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "JO",
+=======
+>>>>>>> origin/master
                 "countryName": "Jordan",
                 "population": "6407085"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "JP",
+=======
+>>>>>>> origin/master
                 "countryName": "Japan",
                 "population": "127288000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KE",
+=======
+>>>>>>> origin/master
                 "countryName": "Kenya",
                 "population": "40046566"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KG",
+=======
+>>>>>>> origin/master
                 "countryName": "Kyrgyzstan",
                 "population": "5776500"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KH",
+=======
+>>>>>>> origin/master
                 "countryName": "Cambodia",
                 "population": "14453680"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KI",
+=======
+>>>>>>> origin/master
                 "countryName": "Kiribati",
                 "population": "92533"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KM",
+=======
+>>>>>>> origin/master
                 "countryName": "Comoros",
                 "population": "773407"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KN",
+=======
+>>>>>>> origin/master
                 "countryName": "Saint Kitts and Nevis",
                 "population": "51134"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KP",
+=======
+>>>>>>> origin/master
                 "countryName": "North Korea",
                 "population": "22912177"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KR",
+=======
+>>>>>>> origin/master
                 "countryName": "South Korea",
                 "population": "48422644"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KW",
+=======
+>>>>>>> origin/master
                 "countryName": "Kuwait",
                 "population": "2789132"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KY",
+=======
+>>>>>>> origin/master
                 "countryName": "Cayman Islands",
                 "population": "44270"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "KZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Kazakhstan",
                 "population": "15340000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LA",
+=======
+>>>>>>> origin/master
                 "countryName": "Laos",
                 "population": "6368162"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LB",
+=======
+>>>>>>> origin/master
                 "countryName": "Lebanon",
                 "population": "4125247"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LC",
+=======
+>>>>>>> origin/master
                 "countryName": "Saint Lucia",
                 "population": "160922"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LI",
+=======
+>>>>>>> origin/master
                 "countryName": "Liechtenstein",
                 "population": "35000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LK",
+=======
+>>>>>>> origin/master
                 "countryName": "Sri Lanka",
                 "population": "21513990"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LR",
+=======
+>>>>>>> origin/master
                 "countryName": "Liberia",
                 "population": "3685076"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LS",
+=======
+>>>>>>> origin/master
                 "countryName": "Lesotho",
                 "population": "1919552"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LT",
+=======
+>>>>>>> origin/master
                 "countryName": "Lithuania",
                 "population": "2944459"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LU",
+=======
+>>>>>>> origin/master
                 "countryName": "Luxembourg",
                 "population": "497538"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LV",
+=======
+>>>>>>> origin/master
                 "countryName": "Latvia",
                 "population": "2217969"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "LY",
+=======
+>>>>>>> origin/master
                 "countryName": "Libya",
                 "population": "6461454"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MA",
+=======
+>>>>>>> origin/master
                 "countryName": "Morocco",
                 "population": "31627428"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MC",
+=======
+>>>>>>> origin/master
                 "countryName": "Monaco",
                 "population": "32965"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MD",
+=======
+>>>>>>> origin/master
                 "countryName": "Moldova",
                 "population": "4324000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ME",
+=======
+>>>>>>> origin/master
                 "countryName": "Montenegro",
                 "population": "666730"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MF",
+=======
+>>>>>>> origin/master
                 "countryName": "Saint Martin",
                 "population": "35925"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MG",
+=======
+>>>>>>> origin/master
                 "countryName": "Madagascar",
                 "population": "21281844"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MH",
+=======
+>>>>>>> origin/master
                 "countryName": "Marshall Islands",
                 "population": "65859"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MK",
+=======
+>>>>>>> origin/master
                 "countryName": "Macedonia",
                 "population": "2062294"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ML",
+=======
+>>>>>>> origin/master
                 "countryName": "Mali",
                 "population": "13796354"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MM",
+=======
+>>>>>>> origin/master
                 "countryName": "Myanmar [Burma]",
                 "population": "53414374"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MN",
+=======
+>>>>>>> origin/master
                 "countryName": "Mongolia",
                 "population": "3086918"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MO",
+=======
+>>>>>>> origin/master
                 "countryName": "Macao",
                 "population": "449198"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MP",
+=======
+>>>>>>> origin/master
                 "countryName": "Northern Mariana Islands",
                 "population": "53883"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MQ",
+=======
+>>>>>>> origin/master
                 "countryName": "Martinique",
                 "population": "432900"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MR",
+=======
+>>>>>>> origin/master
                 "countryName": "Mauritania",
                 "population": "3205060"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MS",
+=======
+>>>>>>> origin/master
                 "countryName": "Montserrat",
                 "population": "9341"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MT",
+=======
+>>>>>>> origin/master
                 "countryName": "Malta",
                 "population": "403000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MU",
+=======
+>>>>>>> origin/master
                 "countryName": "Mauritius",
                 "population": "1294104"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MV",
+=======
+>>>>>>> origin/master
                 "countryName": "Maldives",
                 "population": "395650"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MW",
+=======
+>>>>>>> origin/master
                 "countryName": "Malawi",
                 "population": "15447500"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MX",
+=======
+>>>>>>> origin/master
                 "countryName": "Mexico",
                 "population": "112468855"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MY",
+=======
+>>>>>>> origin/master
                 "countryName": "Malaysia",
                 "population": "28274729"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "MZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Mozambique",
                 "population": "22061451"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NA",
+=======
+>>>>>>> origin/master
                 "countryName": "Namibia",
                 "population": "2128471"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NC",
+=======
+>>>>>>> origin/master
                 "countryName": "New Caledonia",
                 "population": "216494"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NE",
+=======
+>>>>>>> origin/master
                 "countryName": "Niger",
                 "population": "15878271"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NF",
+=======
+>>>>>>> origin/master
                 "countryName": "Norfolk Island",
                 "population": "1828"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NG",
+=======
+>>>>>>> origin/master
                 "countryName": "Nigeria",
                 "population": "154000000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NI",
+=======
+>>>>>>> origin/master
                 "countryName": "Nicaragua",
                 "population": "5995928"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NL",
+=======
+>>>>>>> origin/master
                 "countryName": "Netherlands",
                 "population": "16645000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NO",
+=======
+>>>>>>> origin/master
                 "countryName": "Norway",
                 "population": "5009150"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NP",
+=======
+>>>>>>> origin/master
                 "countryName": "Nepal",
                 "population": "28951852"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NR",
+=======
+>>>>>>> origin/master
                 "countryName": "Nauru",
                 "population": "10065"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NU",
+=======
+>>>>>>> origin/master
                 "countryName": "Niue",
                 "population": "2166"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "NZ",
+=======
+>>>>>>> origin/master
                 "countryName": "New Zealand",
                 "population": "4252277"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "OM",
+=======
+>>>>>>> origin/master
                 "countryName": "Oman",
                 "population": "2967717"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PA",
+=======
+>>>>>>> origin/master
                 "countryName": "Panama",
                 "population": "3410676"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PE",
+=======
+>>>>>>> origin/master
                 "countryName": "Peru",
                 "population": "29907003"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PF",
+=======
+>>>>>>> origin/master
                 "countryName": "French Polynesia",
                 "population": "270485"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PG",
+=======
+>>>>>>> origin/master
                 "countryName": "Papua New Guinea",
                 "population": "6064515"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PH",
+=======
+>>>>>>> origin/master
                 "countryName": "Philippines",
                 "population": "99900177"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PK",
+=======
+>>>>>>> origin/master
                 "countryName": "Pakistan",
                 "population": "184404791"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PL",
+=======
+>>>>>>> origin/master
                 "countryName": "Poland",
                 "population": "38500000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PM",
+=======
+>>>>>>> origin/master
                 "countryName": "Saint Pierre and Miquelon",
                 "population": "7012"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PN",
+=======
+>>>>>>> origin/master
                 "countryName": "Pitcairn Islands",
                 "population": "46"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PR",
+=======
+>>>>>>> origin/master
                 "countryName": "Puerto Rico",
                 "population": "3916632"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PS",
+=======
+>>>>>>> origin/master
                 "countryName": "Palestine",
                 "population": "3800000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PT",
+=======
+>>>>>>> origin/master
                 "countryName": "Portugal",
                 "population": "10676000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PW",
+=======
+>>>>>>> origin/master
                 "countryName": "Palau",
                 "population": "19907"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "PY",
+=======
+>>>>>>> origin/master
                 "countryName": "Paraguay",
                 "population": "6375830"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "QA",
+=======
+>>>>>>> origin/master
                 "countryName": "Qatar",
                 "population": "840926"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "RE",
+=======
+>>>>>>> origin/master
                 "countryName": "Réunion",
                 "population": "776948"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "RO",
+=======
+>>>>>>> origin/master
                 "countryName": "Romania",
                 "population": "21959278"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "RS",
+=======
+>>>>>>> origin/master
                 "countryName": "Serbia",
                 "population": "7344847"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "RU",
+=======
+>>>>>>> origin/master
                 "countryName": "Russia",
                 "population": "140702000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "RW",
+=======
+>>>>>>> origin/master
                 "countryName": "Rwanda",
                 "population": "11055976"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SA",
+=======
+>>>>>>> origin/master
                 "countryName": "Saudi Arabia",
                 "population": "25731776"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SB",
+=======
+>>>>>>> origin/master
                 "countryName": "Solomon Islands",
                 "population": "559198"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SC",
+=======
+>>>>>>> origin/master
                 "countryName": "Seychelles",
                 "population": "88340"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SD",
+=======
+>>>>>>> origin/master
                 "countryName": "Sudan",
                 "population": "35000000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SE",
+=======
+>>>>>>> origin/master
                 "countryName": "Sweden",
                 "population": "9828655"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SG",
+=======
+>>>>>>> origin/master
                 "countryName": "Singapore",
                 "population": "4701069"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SH",
+=======
+>>>>>>> origin/master
                 "countryName": "Saint Helena",
                 "population": "7460"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SI",
+=======
+>>>>>>> origin/master
                 "countryName": "Slovenia",
                 "population": "2007000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SJ",
+=======
+>>>>>>> origin/master
                 "countryName": "Svalbard and Jan Mayen",
                 "population": "2550"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SK",
+=======
+>>>>>>> origin/master
                 "countryName": "Slovakia",
                 "population": "5455000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SL",
+=======
+>>>>>>> origin/master
                 "countryName": "Sierra Leone",
                 "population": "5245695"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SM",
+=======
+>>>>>>> origin/master
                 "countryName": "San Marino",
                 "population": "31477"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SN",
+=======
+>>>>>>> origin/master
                 "countryName": "Senegal",
                 "population": "12323252"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SO",
+=======
+>>>>>>> origin/master
                 "countryName": "Somalia",
                 "population": "10112453"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SR",
+=======
+>>>>>>> origin/master
                 "countryName": "Suriname",
                 "population": "492829"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SS",
+=======
+>>>>>>> origin/master
                 "countryName": "South Sudan",
                 "population": "8260490"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ST",
+=======
+>>>>>>> origin/master
                 "countryName": "São Tomé and Príncipe",
                 "population": "175808"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SV",
+=======
+>>>>>>> origin/master
                 "countryName": "El Salvador",
                 "population": "6052064"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SX",
+=======
+>>>>>>> origin/master
                 "countryName": "Sint Maarten",
                 "population": "37429"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SY",
+=======
+>>>>>>> origin/master
                 "countryName": "Syria",
                 "population": "22198110"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "SZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Swaziland",
                 "population": "1354051"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TC",
+=======
+>>>>>>> origin/master
                 "countryName": "Turks and Caicos Islands",
                 "population": "20556"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TD",
+=======
+>>>>>>> origin/master
                 "countryName": "Chad",
                 "population": "10543464"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TF",
+=======
+>>>>>>> origin/master
                 "countryName": "French Southern Territories",
                 "population": "140"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TG",
+=======
+>>>>>>> origin/master
                 "countryName": "Togo",
                 "population": "6587239"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TH",
+=======
+>>>>>>> origin/master
                 "countryName": "Thailand",
                 "population": "67089500"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TJ",
+=======
+>>>>>>> origin/master
                 "countryName": "Tajikistan",
                 "population": "7487489"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TK",
+=======
+>>>>>>> origin/master
                 "countryName": "Tokelau",
                 "population": "1466"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TL",
+=======
+>>>>>>> origin/master
                 "countryName": "East Timor",
                 "population": "1154625"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TM",
+=======
+>>>>>>> origin/master
                 "countryName": "Turkmenistan",
                 "population": "4940916"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TN",
+=======
+>>>>>>> origin/master
                 "countryName": "Tunisia",
                 "population": "10589025"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TO",
+=======
+>>>>>>> origin/master
                 "countryName": "Tonga",
                 "population": "122580"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TR",
+=======
+>>>>>>> origin/master
                 "countryName": "Turkey",
                 "population": "77804122"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TT",
+=======
+>>>>>>> origin/master
                 "countryName": "Trinidad and Tobago",
                 "population": "1228691"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TV",
+=======
+>>>>>>> origin/master
                 "countryName": "Tuvalu",
                 "population": "10472"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TW",
+=======
+>>>>>>> origin/master
                 "countryName": "Taiwan",
                 "population": "22894384"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "TZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Tanzania",
                 "population": "41892895"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "UA",
+=======
+>>>>>>> origin/master
                 "countryName": "Ukraine",
                 "population": "45415596"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "UG",
+=======
+>>>>>>> origin/master
                 "countryName": "Uganda",
                 "population": "33398682"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "UM",
+=======
+>>>>>>> origin/master
                 "countryName": "U.S. Minor Outlying Islands",
                 "population": "0"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "US",
+=======
+>>>>>>> origin/master
                 "countryName": "United States",
                 "population": "310232863"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "UY",
+=======
+>>>>>>> origin/master
                 "countryName": "Uruguay",
                 "population": "3477000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "UZ",
+=======
+>>>>>>> origin/master
                 "countryName": "Uzbekistan",
                 "population": "27865738"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "VA",
+=======
+>>>>>>> origin/master
                 "countryName": "Vatican City",
                 "population": "921"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "VC",
+=======
+>>>>>>> origin/master
                 "countryName": "Saint Vincent and the Grenadines",
                 "population": "104217"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "VE",
+=======
+>>>>>>> origin/master
                 "countryName": "Venezuela",
                 "population": "27223228"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "VG",
+=======
+>>>>>>> origin/master
                 "countryName": "British Virgin Islands",
                 "population": "21730"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "VI",
+=======
+>>>>>>> origin/master
                 "countryName": "U.S. Virgin Islands",
                 "population": "108708"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "VN",
+=======
+>>>>>>> origin/master
                 "countryName": "Vietnam",
                 "population": "89571130"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "VU",
+=======
+>>>>>>> origin/master
                 "countryName": "Vanuatu",
                 "population": "221552"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "WF",
+=======
+>>>>>>> origin/master
                 "countryName": "Wallis and Futuna",
                 "population": "16025"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "WS",
+=======
+>>>>>>> origin/master
                 "countryName": "Samoa",
                 "population": "192001"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "XK",
+=======
+>>>>>>> origin/master
                 "countryName": "Kosovo",
                 "population": "1800000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "YE",
+=======
+>>>>>>> origin/master
                 "countryName": "Yemen",
                 "population": "23495361"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "YT",
+=======
+>>>>>>> origin/master
                 "countryName": "Mayotte",
                 "population": "159042"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ZA",
+=======
+>>>>>>> origin/master
                 "countryName": "South Africa",
                 "population": "49000000"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ZM",
+=======
+>>>>>>> origin/master
                 "countryName": "Zambia",
                 "population": "13460305"
             },
             {
+<<<<<<< HEAD
                 "countryCode": "ZW",
+=======
+>>>>>>> origin/master
                 "countryName": "Zimbabwe",
                 "population": "11651858"
             }
         ]
+<<<<<<< HEAD
     }
+=======
+>>>>>>> origin/master
 }
