@@ -1,0 +1,1538 @@
+[
+  {
+    "title": "Приветствие",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 26,
+        "imageUrl": "ic_onboarding_avatar_m",
+        "imageSize": 176
+      },
+      {
+        "type": "text",
+        "marginTop": 24,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 18pt;\">%s,\n<b>добро пожаловать</b></div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 20,
+        "text": "<div style=\"color: #878e91; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 22pt\">Вы присоединились к команде банка <b>«Открытие»</b>. Следующая информация поможет вам лучше познакомиться с компанией и сервисами приложения</div>"
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Структура",
+    "type": "page",
+    "header": {
+      "marginTop": 20,
+      "marginBottom": 20,
+      "type": "image",
+      "imageUrl": "onboarding_logo_2",
+      "imageSize": 56
+    },
+    "pages": [
+      {
+        "title": "Банковский\nбизнес",
+        "type": "list",
+        "layers": [
+          {
+            "type": "image",
+            "marginTop": 13,
+            "imageUrl": "structure-2-1-1",
+            "imageSize": 156
+          },
+          {
+            "type": "image",
+            "marginBottom": 20,
+            "imageUrl": "structure-2-1-2",
+            "imageSize": 124
+          }
+        ]
+      },
+      {
+        "title": "Digital-проекты",
+        "type": "list",
+        "layers": [
+          {
+            "type": "image",
+            "imageUrl": "structure-vertical-arrow",
+            "imageSize": 30
+          },
+          {
+            "type": "image",
+            "marginLeft": 40,
+            "imageContent": "left",
+            "imageUrl": "rocket",
+            "imageSize": 38
+          },
+          {
+            "type": "text",
+            "marginTop": 4,
+            "marginLeft": 40,
+            "marginBottom": 0,
+            "text": "<div style=\"color: #878E91; text-align: left; font-family: '.SFUIText-Light'; font-size: 10pt; line-height: 12pt\">Полностью дистанционное</br>обслуживание физических лиц</div>"
+          },
+          {
+            "type": "image",
+            "marginTop": 30,
+            "marginLeft": 40,
+            "imageContent": "left",
+            "imageUrl": "tochka",
+            "imageSize": 15
+          },
+          {
+            "type": "text",
+            "marginTop": 4,
+            "marginLeft": 40,
+            "marginBottom": 0,
+            "text": "<div style=\"color: #878E91; text-align: left; font-family: '.SFUIText-Light'; font-size: 10pt; line-height: 12pt\">Мобильный и интернет-банк</br>для предпринимателей</div>"
+          },
+          {
+            "type": "image",
+            "marginTop": 30,
+            "marginLeft": 40,
+            "imageContent": "left",
+            "imageUrl": "open-factoring",
+            "imageSize": 39
+          },
+          {
+            "type": "text",
+            "marginTop": 4,
+            "marginLeft": 40,
+            "marginBottom": 0,
+            "text": "<div style=\"color: #878E91; text-align: left; font-family: '.SFUIText-Light'; font-size: 10pt; line-height: 12pt\">Факторинг для клиентов</br>сегмента МСБ в digital- канале</div>"
+          }
+        ]
+      },
+      {
+        "title": "Инвестиционный\nбизнес",
+        "type": "list",
+        "layers": [
+          {
+            "type": "image",
+            "marginTop": 5,
+            "imageUrl": "structure-vertical-arrow",
+            "imageSize": 30
+          },
+          {
+            "type": "image",
+            "marginTop": 22,
+            "imageUrl": "onboarding_2_3_1",
+            "imageSize": 47
+          },
+          {
+            "type": "image",
+            "marginTop": 20,
+            "imageUrl": "onboarding_2_3_2",
+            "imageSize": 47
+          },
+          {
+            "type": "image",
+            "marginTop": 20,
+            "imageUrl": "onboarding_2_3_3",
+            "imageSize": 64
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "type": "next_button",
+      "title": "Далее"
+    }
+  },
+  {
+    "title": "Основные качества",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 30,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "imageUrl": "onboarding_3_logo",
+        "imageSize": 80
+      },
+      {
+        "type": "text",
+        "marginTop": 30,
+        "marginLeft": 40,
+        "marginRight": 40,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 20pt\">Крупнейшая частная финансовая</br>группа в России</br>по размеру активов</div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 40,
+        "marginLeft": 22,
+        "marginRight": 22,
+        "textOffset": 10,
+        "text": "<div style=\"color: #3E4447; text-align: left; vertical-align: top; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 26pt\">Ключевое</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">направление деятельности</br><span style=\"font-family: '.SFUIText-Medium'\">«Открытие»</span> — банковский бизнес</span></div>",
+        "imageUrl": "onboarding_3_1",
+        "imageAlign": "left",
+        "imageSize": 100
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 22,
+        "marginRight": 22,
+        "textOffset": 10,
+        "text": "<div style=\"color: #3E4447; text-align: left; vertical-align: middle; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 26pt\">3,7 трлн рублей</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">Совокупные активы группы <span style=\"font-family: '.SFUIText-Medium'\">«Открытие»</span></span></div>",
+        "imageUrl": "onboarding_3_2",
+        "imageAlign": "left",
+        "imageSize": 100
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 22,
+        "marginRight": 22,
+        "marginBottom": 25,
+        "textOffset": 10,
+        "text": "<div style=\"color: #3E4447; text-align: left; vertical-align: middle; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 26pt\">Банк «Открытие»</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">входит в перечень системно значимых кредитных организаций России</span></div>",
+        "imageUrl": "onboarding_3_3",
+        "imageAlign": "left",
+        "imageSize": 100
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Присутствие",
+    "type": "list",
+    "layers": [
+      {
+        "type": "animated_image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_map.gif",
+        "imageSize": 224
+      },
+      {
+        "type": "text",
+        "marginTop": 18,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 24pt\">География «Открытия»</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 19,
+        "marginLeft": 30,
+        "marginRight": 30,
+        "marginBottom": 40,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 20pt\">Более <span style=\"font-family: '.SFUIText-Semibold'\">20 тысяч</span> сотрудников <span style=\"font-family: '.SFUIText-Semibold'\">«Открытия»</span> обслуживают клиентов в <span style=\"font-family: '.SFUIText-Semibold'\">615 отделениях</span>, расположенных в <span style=\"font-family: '.SFUIText-Semibold'\">66 регионах</span></div>"
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Основные качества",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "stocksIcon",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Акции группы</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 19pt\">Принадлежат финансистам и крупным компаниям со значительным опытом успешного развития финансовых активов. Крупнейшими акционерами компании являются <span style=\"font-family: '.SFUIText-Semibold'\">Вадим Беляев</span> — основатель <span style=\"font-family: '.SFUIText-Semibold'\">«Открытия»</span>, <span style=\"font-family: '.SFUIText-Semibold'\">Банк ВТБ</span> — второй по величине активов государственный банк России, <span style=\"font-family: '.SFUIText-Semibold'\">«ИФД КапиталЪ»</span> и <span style=\"font-family: '.SFUIText-Semibold'\">группа ИСТ</span> — крупнейшие частные холдинги, инвестирующие в различные отрасли экономики.</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 40,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #3D4049; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Совет директоров</div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_1",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Вадим Беляев</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Председатель</br>Совета директоров</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_2",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Рубен Аганбегян</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член Совета</br>директоров</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_3",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Кирилл Андросов</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член Совета</br>директоров</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_4",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Ольга Плаксина</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член Совета</br>директоров</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_5",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Дмитрий Ромаев</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член Совета</br>директоров</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "text",
+        "marginTop": 40,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #3D4049; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Правление</div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_6",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Алексей Карахан</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член правления</br></br></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_7",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Дмитрий Попков</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член правления</br></br></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_8",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Сегрей Бабкин</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член правления</br></br></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_9",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Александр Тарабрин</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член правления</br></br></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_10",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Анатолий Предтеченский</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член правления</br></br></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "text",
+        "marginTop": 40,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #3D4049; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div><div style=\"color: #878e91; text-align: center; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 24pt\">Банковская группа</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_11",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Евгений Данкевич</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Председатель Правления банка «ФК Открытие»</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 8,
+        "marginBottom": 10,
+        "imageUrl": "onboarding_user_12",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Елена Будник</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Заместитель председателя Правления, руководитель розничного бизнеса банка «ФК Открытие»</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 10,
+        "imageUrl": "onboarding_user_13",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Геннадий Жужлев</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член правления, руководитель корпоративного бизнеса банка «ФК Открытие»</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 10,
+        "imageUrl": "onboarding_user_14",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Константин Церазов</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член правления, руководитель инвестиционного бизнеса банка «ФК Открытие», член Совета директоров «Открытие Капитал»</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 10,
+        "imageUrl": "onboarding_user_15",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Алина Назарова</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Алина Назарова, управляющий директор по Private Banking</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "text",
+        "marginTop": 30,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 10,
+        "text": "<div style=\"color: #3D4049; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div><div style=\"color: #878e91; text-align: center; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 24pt\">Инвестиционный бизнес</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_16",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Юрий Минцев</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Генеральный директор</br>«Открытие Капитал»</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_user_17",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Сергей Суханов</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Генеральный директор</br>«Открытие Брокер»</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "text",
+        "marginTop": 40,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 10,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div><p align=\"center\" style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 24pt\">Управление активами</div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_user_18",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Виктория Денисова</div><div style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Генеральный директор Управляющей компании «Открытие»</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Основные качества",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "imageUrl": "hands-logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Профессиональные качества, которые «Открытие» ценит  в сотрудниках</div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 40,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "content": "fit",
+        "imageUrl": "number1",
+        "imageSize": 24,
+        "text": "<span style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Эффективность</span>",
+        "textOffset": 12
+      },
+      {
+        "type": "text",
+        "marginTop": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 20pt\">Сотрудник — эксперт в своем деле, обладающий отличными знаниями и навыками. Он доводит начатое до конца, умеет самостоятельно определить, какая из поставленных задач важнее и берет ответственность за принимаемые решения. Он хорошо знает, что в работе важен не только процесс, но и результат.</div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 40,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "marginBottom": 5,
+        "content": "fit",
+        "imageUrl": "number2",
+        "imageSize": 24,
+        "text": "<span style=\"color: #2e2f31; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 17pt; line-height: 24pt\">Уважение</span>",
+        "textOffset": 12
+      },
+      {
+        "type": "text",
+        "marginTop": 20,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 20pt\">Для сотрудника <span style=\"font-family: '.SFUIDisplay-Semibold'\">«Открытия»</span> уважение — главный принцип в работе с внешними внутренними клиентами, коллегами и подчиненными. Он внимателен к интересам другого человека, его убеждениям. В <span style=\"font-family: '.SFUIDisplay-Semibold'\">«Открытии»</span> уважение означает доверять команде, не бояться предлагать и принимать помощь, легко делиться своей экспертизой и обращаться за советом к коллегам. </div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 40,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "content": "fit",
+        "imageUrl": "number3",
+        "imageSize": 24,
+        "text": "<span style=\"color: #2e2f31; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 17pt; line-height: 24pt\">Гибкость</span>",
+        "textOffset": 12
+      },
+      {
+        "type": "text",
+        "marginTop": 20,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "marginBottom": 30,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 20pt\">Сотрудник <span style=\"font-family: '.SFUIDisplay-Semibold'\">«Открытия»</span> готов к изменениям и не боится их. Он узнает новое, решает сложные задачи, предлагает новые идеи и проекты, берется за них сам или вовлекает коллег.</div>"
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "О банке",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 84,
+        "imageUrl": "onboarding_about_logo",
+        "imageSize": 100
+      },
+      {
+        "type": "text",
+        "marginTop": 74,
+        "marginLeft": 30,
+        "marginRight": 30,
+        "marginBottom": 0,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 22pt\"><span style=\"font-family: '.SFUIText-Medium';\">Банк «Открытие»</span> — крупнейший частный банк в России и четвертый по размеру активов среди всех российских банковских групп.</br><span style=\"font-size: 14pt;\"></br></span>Работает на финансовом рынке с 1993 года.</div>"
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "О банке",
+    "type": "grid",
+    "headers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_3_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 40,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Показатели банка</div>"
+      }
+    ],
+    "layers": [
+      {
+        "type": "image_text",
+        "imageAlign": "top",
+        "imageUrl": "onboarding_page_3_item_1",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3d4049; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 20pt\">3 200 000</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">частных клиентов</span></div>",
+        "textOffset": 15
+      },
+      {
+        "type": "image_text",
+        "imageAlign": "top",
+        "imageUrl": "onboarding_page_3_item_2",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3d4049; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 20pt\">195 000</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">компаний</span></div>",
+        "textOffset": 15
+      },
+      {
+        "type": "image_text",
+        "marginTop": 30,
+        "imageAlign": "top",
+        "imageUrl": "onboarding_page_3_item_3",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3d4049; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 20pt\">15 000</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">сотрудников</span></div>",
+        "textOffset": 15
+      },
+      {
+        "type": "image_text",
+        "marginTop": 30,
+        "imageAlign": "top",
+        "imageUrl": "onboarding_page_3_item_4",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3d4049; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 20pt\">53</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">региона</span></div>",
+        "textOffset": 15
+      },
+      {
+        "type": "image_text",
+        "marginTop": 30,
+        "imageAlign": "top",
+        "imageUrl": "onboarding_page_3_item_5",
+        "imageSize": 100,
+        "marginBottom": 30,
+        "text": "<div style=\"color: #3d4049; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 20pt\">470</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">офисов</span></div>",
+        "textOffset": 15
+      },
+      {
+        "type": "image_text",
+        "marginTop": 30,
+        "imageAlign": "top",
+        "imageUrl": "onboarding_page_3_item_6",
+        "imageSize": 100,
+        "marginBottom": 5,
+        "text": "<div style=\"color: #3d4049; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 20pt\">3200</br><span style=\"color: #727779; font-family: '.SFUIText-Light'; font-size: 15pt; line-height: 20pt\">банкоматов</br>по всей стране</span></div>",
+        "textOffset": 15
+      }
+    ],
+    "footers": [
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "О банке",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "ruinsIcon",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIDisplay-Medium'; font-size: 20pt; line-height: 24pt\">Структура бизнеса</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 20,
+        "marginLeft": 36,
+        "marginRight": 36,
+        "text": "<div style=\"color: #727779; text-align: center; font-family: '.SFUIText-Light'; font-size: 17pt; line-height: 20pt\"><span style=\"font-family: '.SFUIText-Semibold'\">«Открытие»</span> — универсальный  банк, в котором существуют пять хорошо развитых направлений бизнеса.</div>"
+      },
+      {
+        "type": "image_text",
+        "marginTop": 36,
+        "marginLeft": 40,
+        "marginRight": 40,
+        "imageUrl": "corporateBusinessIcon",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3e4447; text-align: left; font-family: '.SFUIDisplay-Medium'; font-size: 19pt; line-height: 26pt\">Корпоративный</br>бизнес</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 40,
+        "marginRight": 40,
+        "imageUrl": "retailBusinessIcon",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3e4447; text-align: left; vertical-align: top; font-family: '.SFUIDisplay-Medium'; font-size: 19pt; line-height: 26pt\">Розничный</br>бизнес</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 40,
+        "marginRight": 40,
+        "imageUrl": "littleBusinessIcon",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3e4447; text-align: left; font-family: '.SFUIDisplay-Medium'; font-size: 19pt; line-height: 26pt\">Малый</br>бизнес</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 40,
+        "marginRight": 40,
+        "imageUrl": "investIcon",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3e4447; text-align: left; font-family: '.SFUIDisplay-Medium'; font-size: 19pt; line-height: 26pt\">Инвестиционный</br>бизнес</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "image_text",
+        "marginTop": 20,
+        "marginLeft": 40,
+        "marginRight": 40,
+        "marginBottom": 30,
+        "imageUrl": "privateIcon",
+        "imageSize": 100,
+        "text": "<div style=\"color: #3e4447; text-align: left; font-family: '.SFUIDisplay-Medium'; font-size: 19pt; line-height: 26pt\">Private</br>Banking</div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Команда",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_5_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #3D4049; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Состав правления</div>"
+      },
+      {
+        "type": "user_info",
+        "marginTop": 75,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_5_item_1",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Евгений Данкевич<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Председатель Правления, Член Наблюдательного совета банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_5_item_2",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Елена Будник<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Заместитель председателя Правления, Член Наблюдательного совета банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_5_item_3",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Геннадий Жужлев<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член Правления, Руководитель корпоративного блока банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_5_item_4",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Владимир Рыкунов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Первый заместитель председателя Правления банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_5_item_5",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Светлана Фридман<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член Правления</br>банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_page_5_item_6",
+        "imageContent": "top",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Константин Церазов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">Член Правления, Руководитель инвестиционного блока банка «Открытие», Член Совета директоров «Открытия Капитал»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Команда",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_6_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #3D4049; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 7,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #06CAFD; text-align: center; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 20pt\">Корпоративный бизнес</div>"
+      },
+      {
+        "type": "user_info",
+        "marginTop": 45,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_1",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Геннадий Жужлев<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">руководит корпоративным</br>блоком</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_2",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Сергей Петров<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за клиентский блок</span></br></br></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_3",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Мария Субботина<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за стратегию корпоративного бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_4",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Марат Гареев<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует работу со средними клиентами корпоративного бизнеса и развитие корпоративного бизнеса в филиальной сети</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_5",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Андрей Горбов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу с крупными корпоративными клиентами</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_6",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Елена Магера<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет департамент операций с драгоценными металлами</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_7",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Антон Васильев<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за департамент госпрограмм и проектов с господдержкой</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_8",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Дарья Гончарова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за внешнеэкономическую деятельность корпоративного блока</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_9",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Ольга Домайн<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за департамент по развитию корпоративного бизнеса в региональной сети</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_10",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Анна Жванецкая<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за потребительский сектор</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_11",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Филипп Зубаков<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">является заместителем директора департамент госсектора и ОПК</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_12",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Андрей Зюзин<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу департамента промышленности</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_13",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Сергей Макеев<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет департамент транспорта и транспортной инфраструктуры</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_14",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Павел Семенов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу корпоративного блока в финансовом секторе</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_15",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Елена Степина<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет департамент нефтегазового сектора, добычи и переработки полезных ископаемых</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_16",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Наталья Семкова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу корпоративного блока в финансовом секторе</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_6_item_17",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Андрей Торопов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу департамента энергетики и коммунального сектора</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_page_6_item_18",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Игорь Шишкин<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за деятельность среднего и регионального корпоративного бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Команда",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_7_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 7,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #06CAFD; text-align: center; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 20pt\">Розничный бизнес</div>"
+      },
+      {
+        "type": "user_info",
+        "marginTop": 45,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_1",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Елена Будник<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет розничный и малый бизнес банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_2",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Алексей Карчажкин<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие</br>розничного бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_3",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Иван Алексеев<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует работу</br>с ключевыми клиентами</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_4",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Алексей Попович<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за розничные продажи</span></br></br></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_5",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Антон Сафонов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует создание и развитие розничных продуктов</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_6",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Ольга Асламова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу контактного центра «Открытия» и отвечает за клиентское обслуживание</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_7",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Александр Дынин<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет департамент платежных сервисов и систем</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_7_item_8",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Полина Сивакова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу департамента клиентского сервиса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_page_7_item_9",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Дмитрий Жуков<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует проектный офис и административное сопровождение розничной сети</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Команда",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_8_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 7,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #06CAFD; text-align: center; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 20pt\">Малый бизнес</div>"
+      },
+      {
+        "type": "user_info",
+        "marginTop": 45,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_8_item_1",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Елена Будник<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет розничный и малый бизнес банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_8_item_2",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Лариса Швецова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие малого бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_8_item_3",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Оксана Леонова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует направление развития продуктов малого бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_8_item_4",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Светлана Чубакова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие кредитования малого бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_page_8_item_5",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Андрей Щенников<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие электронных каналов малого бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Команда",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_9_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</br></div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 7,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #06CAFD; text-align: center; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 20pt\">Private Bankng</div>"
+      },
+      {
+        "type": "user_info",
+        "marginTop": 45,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_9_item_1",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Алина Назарова<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">руководит направлением Private Banking</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_9_item_2",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Ольга Трубина<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует работу первого департамента развития клиентов</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_page_9_item_3",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Антон Денисов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет аналитическую дирекцию</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Команда",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_10_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 7,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #06CAFD; text-align: center; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 20pt\">Развитие бизнеса</br>и инновационные проекты</div>"
+      },
+      {
+        "type": "user_info",
+        "marginTop": 24,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_10_item_1",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Максим Янпольский<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие диджитал-технологий розничного бизнеса</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_10_item_2",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Борис Дьяконов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет проект «Точка»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_10_item_3",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Михаил Провизион<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие проекта «Рокетбанк»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_10_item_4",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Денис Аншаков<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует специальные финтех-проекты</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_page_10_item_5",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Виктор Вернов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">возглавляет «Открытие Факторинг»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  },
+  {
+    "title": "Команда",
+    "type": "list",
+    "layers": [
+      {
+        "type": "image",
+        "marginTop": 20,
+        "imageUrl": "onboarding_page_11_logo",
+        "imageSize": 182
+      },
+      {
+        "type": "text",
+        "marginTop": 10,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #2e2f31; text-align: center; font-family: '.SFUIText-Medium'; font-size: 20pt; line-height: 24pt\">Бизнес-лидеры</div>"
+      },
+      {
+        "type": "text",
+        "marginTop": 7,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "text": "<div style=\"color: #06CAFD; text-align: center; font-family: '.SFUIText-Medium'; font-size: 19pt; line-height: 20pt\">Инвестиционный бизнес</div>"
+      },
+      {
+        "type": "user_info",
+        "marginTop": 45,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_1",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Константин Церазов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">руководит инвестиционным блоком банка «Открытие»</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_2",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Александр Мансир<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу с клиентами</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_3",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Дмитрий Зак<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует направление по работе с ценными бумагами</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_4",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Юрий Маслов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">занимается вопросами брокерского обслуживания</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_5",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Владимир Омельченко<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует работу по рынку деривативов и товаров</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_6",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Андрей Пашкевич<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за работу по рынкам капитала</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_7",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Сергей Смирнов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие бизнеса на денежном и валютном рынках</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "imageUrl": "onboarding_page_11_item_8",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Тигран Шакарян<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">курирует работу по поддержке инвестиционного блока</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "user_info",
+        "marginTop": 15,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginBottom": 30,
+        "imageUrl": "onboarding_page_11_item_9",
+        "imageSize": 60,
+        "text": "<div style=\"color: #2e2f31; text-align: left; font-family: '.SFUIText-Medium'; font-size: 17pt; line-height: 24pt\">Юрий Михайлов<br><span style=\"color: #878e91; font-family: '.SFUIText-Light'; font-size: 14pt; line-height: 20pt\">отвечает за развитие инвестиционных проектов</span></div>",
+        "textOffset": 20
+      },
+      {
+        "type": "next_button",
+        "title": "Далее"
+      }
+    ]
+  }
+]
