@@ -1,13 +1,15 @@
-from time import strftime, gmtime, localtime
-from apt.package import unicode
+# coding=utf-8
+from time import strftime, localtime
+from urllib import urlencode
 
 __author__ = 'chuffey'
 
 from bs4 import BeautifulSoup
-import lxml
 import urllib3
-from urllib.parse import *
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 '''page = urllib3.PoolManager().request('GET', url).data
 soup = BeautifulSoup(page.decode("cp1251"))
 urls =  []
@@ -19,67 +21,70 @@ for a in soup.find('div', {'class': 'pages'}).findAll('a'):
     i += 1
 
 i = 1'''
-url = 'http://www.dom43.ru/estate_base?object_type=0&operation=0&user_id=&object_id=4&oblast_id=37&town_id=99511&microregion_id=0&street_id=0&admin_region_id=226338&rooms=1&min_land_area=0&max_land_area=0&min_price=0&max_price=0&min_area=0&max_area=0&min_living_area=0&max_living_area=0&min_kitchen_area=0&max_kitchen_area=0&sort=0'
-f = open('db/workfile-{0}.html'.format(strftime("%Y-%m-%d_%H:%M:%S", localtime())), 'w')
+url = 'https://dom43.ru/realty/search/?operation=sell&price__lte=&floor__gte=&display_type=grid&object_type=flat&address=452a2ddf-88a1-4e35-8d8d-8635493768d4&rooms=&total_floors__gte=&total_floors__lte=&price__gte=&id=&floor__lte=&house_number=&area_total__gte=100&realtor=&area_total__lte='
+f = open('db\\workfile-{0}.html'.format(strftime("%Y%m%d_%H%M_%S", localtime())), 'w')
 f.write('''
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head> ''' +
-    '<title>База от {0}</title>'.format(strftime("%Y-%m-%d_%H:%M:%S", localtime())) +
-    '''<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru_RU" type="text/javascript"></script>
-    <script src="board.js" type="text/javascript"></script>
-    <script src="jquery-1.11.2.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="board.css">
-
-    <script type="text/javascript">
-        ymaps.ready(init);
-        var myMap,
-            myGeoObjects;
-
-    	function getGeoObjects() {
-			myGeoObjects = [];
-'''
-)
-last_page = 80
+        '<title>База от {0}</title>'.format(strftime("%Y-%m-%d_%H:%M:%S", localtime())) +
+        '''<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru_RU" type="text/javascript"></script>
+        <script src="board.js" type="text/javascript"></script>
+        <script src="jquery-1.11.2.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="board.css">
+    
+        <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap,
+                myGeoObjects;
+    
+            function getGeoObjects() {
+                myGeoObjects = [];
+    '''
+        )
+last_page = 4
 ob = 0
 for i in range(0, last_page):
-    print("Индексация {0} из {1}".format(i+1, last_page))
-    new_url = url + '&start=' + str(i*54)
+    print("Индексация {0} из {1}".format(i + 1, last_page))
+    new_url = url + '&page=' + str(i + 1)
     page = urllib3.PoolManager().request('GET', new_url).data
-    soup = BeautifulSoup(page.decode("cp1251"))
-    tds = soup.find("table", {"class": "boards_card"}).findAll("td")
+    soup = BeautifulSoup(page)
+    items = soup.findAll("div", {"class": "property-card-grid"})
     geocode = 'http://geocode-maps.yandex.ru/1.x/?'
-    for td in tds:
-
-        td_soup = BeautifulSoup(str(td))
-        try:
-            address = td_soup.findAll('td')[2].text + ' ' + td_soup.findAll('td')[4].text
-            code_xml = urllib3.PoolManager().request('GET', geocode + urlencode({'geocode': str(address).replace('Р.Люксембург', 'Розы Люксембург')})).data
-            cor = BeautifulSoup(code_xml).find('pos').string.split(' ')
-            col = ")"
-            if 'индивидуальная' in str(td_soup):
-                col = ",{preset: 'islands#redIcon'})"
-            ww = "var gO = new ymaps.GeoObject({\n geometry: { type: \"Point\", coordinates: [ " + str(cor[1]) + ", " + str(cor[0]) + "]},\n properties: {\nclusterCaption: '" + str(td_soup.find('th').text) + "', \nballoonContentBody: '" + str(td_soup).replace('\n','').replace('\r', '').replace('src="','src="http://www.dom43.ru/estate_base/') + "'\n}\n}" + \
-                  col + '''; gO.events.add('parentchange', function (e) {
+    for item in items:
+        item_soup = BeautifulSoup(str(item))
+        address = item_soup.find("div", {"class": "property-card-grid__address"}).text.strip()
+        code_xml = urllib3.PoolManager().request('GET', geocode + urlencode(
+            {'geocode': address.encode('cp1251')})).data
+        cor = BeautifulSoup(code_xml).find('pos').string.split(' ')
+        cor1 = str(cor[1])
+        cor2 = str(cor[0])
+        caption = item_soup.find('div', {'class': 'property-card-grid__title'}).text.replace('\n', '') \
+            .replace(' ', '').replace('href="', 'href="https://dom43.ru') \
+            .encode('utf-8')
+        grid_body = item_soup.find('div', {'class': 'property-card-grid__body'}).encode('utf-8') \
+            .replace('href="', 'href="https://dom43.ru') \
+            .replace('src="', 'src="https://dom43.ru') \
+            .replace('\n', '')
+        grid_image = item_soup.find('div', {'class': 'property-card-grid__image'}).encode('utf-8') \
+            .replace('href="', 'href="https://dom43.ru') \
+            .replace('src="', 'src="https://dom43.ru') \
+            .replace('\n', '')
+        body = grid_image + grid_body
+        ww = "var gO = new ymaps.GeoObject({\n geometry: { type: \"Point\", coordinates: [" + cor1 + ", " + cor2 + "]},\n properties: {\nclusterCaption: '" + caption + "', \nballoonContentBody: '" + body + "'\n}\n}" + \
+             ')' + '''; gO.events.add('parentchange', function (e) {
             var target = e.get('target');
             if (target.getParent() != null) {
-                if (target.properties.get('balloonContentBody').indexOf('индивидуальная') > -1) {
-                    target.getParent().options.set('preset', 'islands#redClusterIcons');
-                } else {
-                    target.getParent().options.set('preset', 'islands#blueClusterIcons');
-                }
+               
             }
 			}''' + ");myGeoObjects.push(gO);"
 
-            f.write(ww + '\n')
-            ob +=1
-            print("Добавлено {0} объявление".format(ob), end="\r")
-        except:
-            continue
+        f.write(ww + '\n')
+        ob += 1
+        print("Добавлено {0} объявление".format(ob))
 
-print ('Готово!')
 f.write('''
 return myGeoObjects;
 
@@ -107,3 +112,4 @@ return myGeoObjects;
 </html>
 ''')
 f.close()
+print ('Готово!')
