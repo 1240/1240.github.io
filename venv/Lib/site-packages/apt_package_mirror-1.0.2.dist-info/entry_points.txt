@@ -1,0 +1,3 @@
+[console_scripts]
+apt_package_mirror = apt_package_mirror.__main__:main
+

@@ -44,7 +44,7 @@ f.write('''
                 myGeoObjects = [];
     '''
         )
-last_page = 4
+last_page = 5
 ob = 0
 for i in range(0, last_page):
     print("Индексация {0} из {1}".format(i + 1, last_page))
